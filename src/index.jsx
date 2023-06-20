@@ -8,4 +8,3 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 		<Browser />
 	</React.StrictMode>
 )
-//comnetari qualquer

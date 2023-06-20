@@ -19,7 +19,7 @@ const Projeto = () =>  (
               <Button type="text" icon={<FolderAddFilled style={{ fontSize: '30px' }} />}>
               </Button>
       </div></Header>
-    <Content style={{background:"white"}}>OI P4I</Content>
+    <Content style={{background:"white"}}>OI</Content>
     <Footer></Footer>
     </Layout>
 );

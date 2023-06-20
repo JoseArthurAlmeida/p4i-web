@@ -59,6 +59,5 @@ const App = () => {
     </Layout>
   );
 };
-//comentário qualquer
 
 export default App;
