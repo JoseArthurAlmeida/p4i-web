@@ -1,0 +1,50 @@
+ <div style={{
+            display: 'flex',
+            justifyContent: 'flex-start',
+            height: '100px'
+          }}>
+            <div>
+              <h1>P.4.I</h1>
+            </div>
+            <div id="icons"
+              style={{
+                display: 'flex',
+                justifyContent: 'flex-end',
+                gap:'10px'
+
+              }}
+            >
+
+              <Button type="text" icon={<WhatsAppOutlined style={{ fontSize: '28px' }} />}>
+              </Button>
+              <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}>
+              </Button>
+              <Button type="text" icon={<FolderAddFilled style={{ fontSize: '30px' }} />}>
+              </Button>
+            </div>
+            
+          </div>
+          <div>
+
+            <Title level={4}>Cliente:</Title>
+            <p>conteudo</p>
+
+          </div>
+          <Button type="primary" className="btn-red">Andamento</Button>
+          <Outlet />
+        </Content>
+        <style>
+          {`
+            .btn-red {
+              position: absolute;
+              bottom: 20px;
+              right: 20px;
+              background-color: red;
+              color: white;
+              border: none;
+              padding: 10px 40px;
+              border-radius: 79px;
+              font-size: 13px;
+            }
+          `}
+        </style>
