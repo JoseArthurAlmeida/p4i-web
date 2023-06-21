@@ -12,9 +12,7 @@ h1{
   padding: 0px;
 }
 
-#icons {
-  display: 'flex';
-  justifyContent: 'flex-end';
-  marginRight: '-13rem';
-  marginTop: '-13.9rem';
+.conteudo {
+  background: #ffffff;
+
 }

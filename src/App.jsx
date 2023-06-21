@@ -30,12 +30,12 @@ const App = () => {
             {
               key: '1',
               icon: <HomeOutlined />,
-              label: 'Seu projeto'
+              label: 'Seu Projeto'
             },
             {
               key: '3',
               icon: <FolderOpenOutlined />,
-              label: 'projetos arquivados'
+              label: 'Projetos Arquivados'
             }
           ]}
         />
