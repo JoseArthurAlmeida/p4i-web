@@ -1,4 +1,4 @@
-import { Button, Layout} from 'antd';
+import { Button, Layout, Col, Row} from 'antd';
 import {
   WhatsAppOutlined,
   GitlabFilled,
@@ -25,12 +25,28 @@ const Projeto = () =>  (
     </Header>
       
       <Content>
-        <div className='conteudo'>         
-            OI
+
+        <div className='conetudos'>
+
+          <Row>
+            
+            <Col span={12}>
+              <div id='con1' className='conteudos'>
+              conteúdo 1
+              </div>
+            </Col>
+            <Col span={12}>
+              <div id='con2' className='conteudos'>
+              conteúdo 2
+              </div>
+            </Col>
+          </Row>
+
         </div>
+
       </Content>
       
-    <Footer></Footer>
+   
     </Layout>
 );
 
