@@ -15,3 +15,12 @@ h1{
 .conteudos {
   background-color: #ffffff;
 }
+
+#text1{
+  color: #00000000;  
+}
+
+.custom-menu-item {
+  background-color: transparent;
+  color: #ffffff;
+}

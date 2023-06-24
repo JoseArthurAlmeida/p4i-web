@@ -2,18 +2,14 @@ import {
   MenuFoldOutlined,
   HomeOutlined,
   FolderOpenOutlined,
-  WhatsAppOutlined,
-  GitlabFilled,
-  FolderAddFilled,
 } from '@ant-design/icons';
-import { Button, Layout, Menu, Typography } from 'antd';
+import { Button, Layout, Menu} from 'antd';
 import { Outlet } from "react-router-dom";
 import './home.css';
 
 
 
 const { Header, Sider, Content } = Layout;
-const { Title } = Typography;
 
 const App = () => {
 
@@ -25,20 +21,10 @@ const App = () => {
           theme="light"
           mode="inline"
           defaultSelectedKeys={['1']}
-          style={{ background: '#085C16', height: '100vh' }}
-          items={[
-            {
-              key: '1',
-              icon: <HomeOutlined />,
-              label: 'Seu Projeto'
-            },
-            {
-              key: '3',
-              icon: <FolderOpenOutlined />,
-              label: 'Projetos Arquivados'
-            }
-          ]}
-        />
+          style={{ background: '#085C16', height: '100vh' }}>
+        <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item>
+        <Menu.Item key="3" icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item>
+      </Menu>
       </Sider>
       <Layout>
         <Content

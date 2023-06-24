@@ -32,7 +32,7 @@ const Projeto = () =>  (
             
             <Col span={12}>
               <div id='con1' className='conteudos'>
-              conteúdo 1
+              conteúdo 1               
               </div>
             </Col>
             <Col span={12}>
