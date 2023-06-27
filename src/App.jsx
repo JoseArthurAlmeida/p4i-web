@@ -20,29 +20,14 @@ const App = () => {
         <Menu
           theme="light"
           mode="inline"
-          defaultSelectedKeys={['1']}
+          defaultSelectedKeys={[' ']}
           style={{ background: '#085C16', height: '100vh' }}>
-        <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item>
-        <Menu.Item key="3" icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item>
-      </Menu>
+          <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item>
+          <Menu.Item key="2" icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item>
+        </Menu>
       </Sider>
-      <Layout>
-        <Content
-
-          style={{
-        
-            background: 'white'
-
-
-          }}
-
-        >
           <Outlet />
-          </Content>
-        
-
       </Layout>
-    </Layout>
   );
 };
 

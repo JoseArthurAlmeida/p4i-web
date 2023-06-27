@@ -1,14 +1,21 @@
-import { Button, Layout, Col, Row} from 'antd';
+import { Button, Layout, Col, Row, Space, Typography, Divider} from 'antd';
 import {
   WhatsAppOutlined,
   GitlabFilled,
   FolderAddFilled,
 } from '@ant-design/icons';
-const { Header, Content, Footer } = Layout;
 import "./home.css"
+const { Header, Content, Footer } = Layout;
+const {Text, Link} = Typography;
+
 
 const Projeto = () =>  (
-  <Layout>
+  <Layout style={{
+        
+    background: 'white'
+
+
+  }}>
     <Header style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
       <div><h1>P.4.I</h1></div>
       <div style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
@@ -25,28 +32,28 @@ const Projeto = () =>  (
     </Header>
       
       <Content>
-
-        <div className='conetudos'>
-
-          <Row>
-            
-            <Col span={12}>
+        <main>
               <div id='con1' className='conteudos'>
-              conteúdo 1               
+                    <h>Cliente:</h>
+                    <h>Nome comleto do cliente</h>
+                    <Divider></Divider>  
+                    <h>Integrantes:</h>
+                    <ul>
+                      <li>Participante 1</li>
+                      <li>Participante 2</li>
+                      <li>Participante 3</li>
+                      <li>Participante 4</li>
+                      <li>Participante 5</li>
+                    </ul>  
               </div>
-            </Col>
-            <Col span={12}>
-              <div id='con2' className='conteudos'>
-              contedo 2
-              </div>
-            </Col>
-          </Row>
-
-        </div>
-
+                <div id='con2' className='conteudos'>
+                      <h>Descrição:</h>
+                      <h>Descrição geral do projeto</h>
+                </div>
+        </main>      
       </Content>
       
-   
+   <Footer></Footer>
     </Layout>
 );
 

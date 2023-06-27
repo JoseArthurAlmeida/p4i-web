@@ -14,6 +14,7 @@ h1{
 
 .conteudos {
   background-color: #ffffff;
+  display: inline-block;
 }
 
 #text1{
@@ -21,6 +22,6 @@ h1{
 }
 
 .custom-menu-item {
-  background-color: transparent;
+  background-color: #00000000;
   color: #ffffff;
 }
