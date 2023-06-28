@@ -12,8 +12,18 @@ h1{
   padding: 0px;
 }
 
+main {
+  text-align: left;
+  vertical-align: center;
+  line-height: 5vh;
+}
+
 .conteudos {
   background-color: #ffffff;
+  
+}
+
+.content{
   display: inline-block;
 }
 

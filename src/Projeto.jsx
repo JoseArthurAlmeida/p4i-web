@@ -32,25 +32,31 @@ const Projeto = () =>  (
     </Header>
       
       <Content>
-        <main>
-              <div id='con1' className='conteudos'>
-                    <h>Cliente:</h>
-                    <h>Nome comleto do cliente</h>
-                    <Divider></Divider>  
-                    <h>Integrantes:</h>
-                    <ul>
-                      <li>Participante 1</li>
-                      <li>Participante 2</li>
-                      <li>Participante 3</li>
-                      <li>Participante 4</li>
-                      <li>Participante 5</li>
-                    </ul>  
-              </div>
-                <div id='con2' className='conteudos'>
+        
+          <div className='content'>
+              <section className='conteudos'>
+                <h>Cliente:</h>
+                <p>Nome comleto do cliente</p>
+              </section>
+          
+              <section> 
+                <h>Integrantes:</h>
+                  <ul>
+                    <li>Participante 1</li>
+                    <li>Participante 2</li>
+                    <li>Participante 3</li>
+                    <li>Participante 4</li>
+                    <li>Participante 5</li>
+                  </ul>  
+              </section>
+          </div>
+          <div className='content'>
+                <section className='conteudos'>
                       <h>Descrição:</h>
-                      <h>Descrição geral do projeto</h>
-                </div>
-        </main>      
+                      <p>Descrição geral do projeto</p>
+                </section>
+           </div>     
+              
       </Content>
       
    <Footer></Footer>
