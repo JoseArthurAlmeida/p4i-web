@@ -31,7 +31,7 @@ const Projeto = () =>  (
       </div>
     </Header>
       
-      <Content>
+      <Content style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
         
           <div className='content'>
               <section className='conteudos'>
@@ -59,7 +59,7 @@ const Projeto = () =>  (
               
       </Content>
       
-   <Footer></Footer>
+      <Footer></Footer>
     </Layout>
 );
 
