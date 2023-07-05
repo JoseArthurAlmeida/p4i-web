@@ -4,6 +4,7 @@ import {
   GitlabFilled,
   FolderAddFilled,
 } from '@ant-design/icons';
+import PieChart from './grafico';
 import "./home.css"
 const { Header, Content, Footer } = Layout;
 const {Text, Link} = Typography;
@@ -33,7 +34,7 @@ const Projeto = () =>  (
       
       <Content style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
         
-          <div className='content'>
+          <div className='content' style={{ marginRight: '10px' }}>
               <section className='conteudos'>
                 <h>Cliente:</h>
                 <p>Nome comleto do cliente</p>
@@ -50,13 +51,13 @@ const Projeto = () =>  (
                   </ul>  
               </section>
           </div>
-          <div className='content'>
+          <div className='content'  style={{ marginLeft: '10px' }}>
                 <section className='conteudos'>
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
-                </section>
-           </div>     
-              
+                </section> 
+           </div>
+           <PieChart />     
       </Content>
       
       <Footer></Footer>

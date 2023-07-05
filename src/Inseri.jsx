@@ -7,7 +7,7 @@ import { Button, Layout, Menu } from 'antd';
 import { useState } from 'react';
 
 const { Header, Sider, Content } = Layout;
-const inseri = () => {
+const Inseri = () => {
   const [collapsed, setCollapsed] = useState(false);
 // oi
   return (
@@ -77,4 +77,4 @@ const inseri = () => {
 
 
 
-export default inseri;
+export default Inseri;
