@@ -56,6 +56,7 @@ const Projeto = () =>  (
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
                 </section> 
+                <Button type="primary" className="btn-red">Andamento</Button>
            </div>
            <PieChart />     
       </Content>
