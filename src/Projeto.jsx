@@ -57,20 +57,7 @@ const Projeto = () =>  (
                       <p>Descrição geral do projeto</p>
                 </section> 
                 <Button type="primary" className="btn-red">Andamento</Button>
-                 <style>
-          {`
-            .btn-red {
-              position: absolute;
-              bottom: 30px;
-              right: 30px;
-              background-color: red;
-              border: none;
-              padding: 10px 40px;
-              border-radius: 79px;
-              font-size: 14px;
-            }
-          `}
-        </style>
+                <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
            <PieChart />     
       </Content>

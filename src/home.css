@@ -62,3 +62,14 @@ main {
   background-color: #00000000;
   color: #ffffff;
 }
+
+ .btn-red {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: red;
+ border: none;
+ padding: 10px 40px;
+ border-radius: 79px;
+ font-size: 14px;
+  }
