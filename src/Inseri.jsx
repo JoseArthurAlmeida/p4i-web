@@ -11,51 +11,6 @@ const Inseri = () => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
-        <Menu
-          theme="light"
-          mode="inline"
-          defaultSelectedKeys={['1']}
-          style={{ background: '#085C16',  height: '100vh'}} 
-          items={[
-            {
-              key: '1',
-              icon: <HomeOutlined />,
-              label: 'Seu projeto',
-  
-            },
-            {
-              key: '3',
-              icon: <FolderOpenOutlined />,
-              label: 'projetos arquivados',
-            },
-          ]}
-        />
-      </Sider>
-      <Layout>
-        <Header
-         
-          style={{
-            padding: 0,
-            background: 'white',
-          }}
-          
-        >
-          <Button
-            type="text"
-            icon={collapsed ? <MenuFoldOutlined /> : <MenuFoldOutlined />}
-            onClick={() => setCollapsed(!collapsed)}
-            style={{
-              background: 'white',
-              fontSize: '16px',
-              width: 64,
-              height: 64,
-            }}
-            
-          />
-
-        </Header>
         <Content
           
           style={{
@@ -70,7 +25,6 @@ const Inseri = () => {
 <hr style={{ borderTop: '5px solid #085C16', marginRight: '1000px' }} />
         </Content>
       </Layout>
-    </Layout>
   );
 };
 

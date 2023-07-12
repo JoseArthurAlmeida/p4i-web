@@ -1,6 +1,7 @@
 import { UserOutlined , KeyOutlined } from '@ant-design/icons';
 import { Button, Input } from 'antd';
-import logo from './components/images/logo.png'
+import { NavLink } from 'react-router-dom';
+import logo from './components/images/logo.png';
 
 const Login = () => {
   return (
@@ -25,7 +26,7 @@ const Login = () => {
         </div>
 
         
-        <button class="btn-red">Acessar</button>
+        <NavLink to="/inseri"><button class="btn-red">Acessar</button></NavLink>
         <style>
           {`
             .btn-red {

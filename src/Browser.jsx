@@ -1,18 +1,20 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from "./App"
 import Login from "./Long"
-import Cadastro from "./Inseri"
+import Inseri from "./Inseri" 
 import Projeto from "./Projeto"
+import ProjetosArquivados from "./Arquivados"
 
 const Browser = () => {
   const router = createBrowserRouter([
-    {
-      path: "/", element: <App />,
+    
+    { path: "", element: <Login/>},
+    
+    { path: "/", element: <App />,
       children: [
-        { path: "/", element: (<Projeto />) },
-        { path: "/pessoa", element: <h1>Pessoa</h1> },
-        { path: "/login", element: <Login /> },
-        { path: "/cadastro", element: <Cadastro /> }
+        { path: "/inseri", element: <Inseri/>},
+        { path: "/projeto", element: <Projeto/>},
+        { path: "/projetosarquivados", element: <ProjetosArquivados/> },
       ]
     }]);
   return (

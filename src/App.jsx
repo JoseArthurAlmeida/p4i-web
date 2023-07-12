@@ -3,8 +3,8 @@ import {
   HomeOutlined,
   FolderOpenOutlined,
 } from '@ant-design/icons';
-import { Button, Layout, Menu} from 'antd';
-import { Outlet } from "react-router-dom";
+import { Button, Layout, Menu} from 'antd'; 
+import { Outlet, NavLink } from "react-router-dom";
 import './home.css';
 
 
@@ -20,10 +20,10 @@ const App = () => {
         <Menu
           theme="light"
           mode="inline"
-          defaultSelectedKeys={['1']}
+          defaultSelectedKeys={[' ']}
           id="menu">
-          <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item>
-          <Menu.Item key="2" icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item>
+          <NavLink to="/projeto"><Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item></NavLink>
+          <NavLink to="/projetosarquivados"><Menu.Item key="2" icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item></NavLink>
         </Menu>
       </Sider>
           <Outlet />

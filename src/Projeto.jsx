@@ -6,8 +6,7 @@ import {
 } from '@ant-design/icons';
 import PieChart from './grafico';
 import "./home.css"
-const { Header, Content, Footer } = Layout;
-const {Text, Link} = Typography;
+const { Header, Content} = Layout;
 
 
 const Projeto = () =>  (
@@ -20,13 +19,13 @@ const Projeto = () =>  (
     <Header style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
       <div><h1>P.4.I</h1></div>
       <div style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
-            <a href='https://www.whatsapp.com/?lang=pt_br'>
+            <a href='https://www.whatsapp.com/?lang=pt_br' target="_blank">
               <Button type="text" icon={<WhatsAppOutlined style={{ fontSize: '28px' }} />}></Button>
             </a>
-            <a href='https://about.gitlab.com'>
+            <a href='https://about.gitlab.com' target="_blank">
               <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}></Button>
             </a>
-            <a href='https://drive.google.com/drive'>
+            <a href='https://drive.google.com/drive' target="_blank">
               <Button type="text" icon={<FolderAddFilled style={{ fontSize: '30px' }} />}></Button>
             </a>
       </div>
@@ -74,8 +73,6 @@ const Projeto = () =>  (
            </div>
            <PieChart />     
       </Content>
-      
-      <Footer></Footer>
     </Layout>
 );
 
