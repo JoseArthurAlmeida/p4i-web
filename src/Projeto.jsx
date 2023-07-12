@@ -1,9 +1,10 @@
-import { Button, Layout, Col, Row, Space, Typography, Divider} from 'antd';
+import { Button, Layout} from 'antd';
 import {
   WhatsAppOutlined,
   GitlabFilled,
   FolderAddFilled,
 } from '@ant-design/icons';
+import { NavLink } from 'react-router-dom';
 import PieChart from './grafico';
 import "./home.css"
 const { Header, Content} = Layout;
@@ -55,7 +56,7 @@ const Projeto = () =>  (
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
                 </section> 
-                <Button type="primary" className="btn-red">Andamento</Button>
+                <NavLink to="/andamento"><Button type="primary" className="btn-red">Andamento</Button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
            <PieChart />     
