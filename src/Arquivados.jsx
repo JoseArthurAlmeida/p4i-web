@@ -1,8 +1,16 @@
+import {Layout} from 'antd';
+const {Content} = Layout;
+
 const ProjetosArquivados = () => {
+  
   return (
-    <div>
-      <h>EM DESENVOLVIMENTO!!!!!</h>
-    </div>
+    <Layout>
+      <Content>
+        <div>
+          <h>EM DESENVOLVIMENTO!!!!!</h>
+        </div>
+      </Content> 
+    </Layout>
   );
 };
 

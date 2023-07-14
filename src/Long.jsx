@@ -26,7 +26,7 @@ const Login = () => {
         </div>
 
         
-        <NavLink to="/inseri"><button class="btn-red">Acessar</button></NavLink>
+        <NavLink to="/inseri"><button class="btn-acessar">Acessar</button></NavLink>
         <style>
           {`
             .btn-red {

@@ -67,9 +67,38 @@ main {
   position: absolute;
   bottom: 30px;
   right: 30px;
-  background-color: red;
+  background-color: #BE0D00;
  border: none;
  padding: 10px 40px;
  border-radius: 79px;
  font-size: 14px;
   }
+
+.btn-acessar {
+    position: center;
+    color: #FFF;
+    bottom: 30px;
+    right: 30px;
+    background-color: #BE0D00;
+   border: none;
+   padding: 10px 40px;
+   border-radius: 79px;
+   font-size: 14px;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+
+
+
+.button span {
+  display: block;
+  margin-top: 5px;
+}

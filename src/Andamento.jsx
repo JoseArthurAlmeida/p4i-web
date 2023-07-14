@@ -1,4 +1,5 @@
-import { Layout} from 'antd';
+import {Layout} from 'antd';
+import './home.css'
 const {Content} = Layout;
 
 const Andamento = () => {
@@ -6,10 +7,12 @@ const Andamento = () => {
     <Layout>
         <Content>
             <div>
-                <h>EM DESENVOLVIMENTO!!!!!</h>
-            </div>
-            <div>
-                <h>EM DESENVOLVIMENTO!!!!!</h>
+            <button>
+                <span>Atividades</span>
+            </button>
+            <button>
+                <span>Reuniões</span>
+            </button>
             </div>
         </Content>
     </Layout>    
