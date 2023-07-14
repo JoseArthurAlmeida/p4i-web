@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-import { Slider, Switch } from 'antd';
-
-
-const Barrafiltro = () => {
-  const [disabled, setDisabled] = useState(false);
-  const onChange = (checked) => {
-    setDisabled(checked);
-  };
-  return (
-    <> 
-      <Slider range defaultValue={[20, 50]} disabled={disabled} />  
-    </>
-  );
-};
+import React from 'react';
+import { Slider } from 'antd';
+import './barra.css';
+const Barrafiltro = () => (
+  <Slider
+    range={{
+      draggableTrack: true,
+    }}
+    defaultValue={[20, 50]}
+  />
+);
 export default Barrafiltro;

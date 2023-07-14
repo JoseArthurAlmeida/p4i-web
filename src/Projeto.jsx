@@ -57,7 +57,7 @@ const Projeto = () =>  (
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
                 </section> 
-                <NavLink to="/andamento"><Button type="primary" className="btn-red">Andamento</Button></NavLink>
+                <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
            <PieChart />     

@@ -7,7 +7,7 @@ h1{
 }
 
 #menu{
-  background: rgb(8, 92, 22);
+  background: #085c16;
     height: 100vh;
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
 }
@@ -50,29 +50,23 @@ main {
   transition: all 0.2s;
 }
 
-.conteudos {
-  background-color: #ffffff;
-  
-}
-
-#text1{
-  color: #00000000;  
-}
 
 .custom-menu-item {
   background-color: #00000000;
   color: #ffffff;
 }
 
- .btn-red {
+.btn-red {
   position: absolute;
   bottom: 30px;
   right: 30px;
   background-color: #BE0D00;
- border: none;
- padding: 10px 40px;
- border-radius: 79px;
- font-size: 14px;
+  color: #ffffff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 79px;
+  font-size: 14px;
+  cursor: pointer;
   }
 
 .btn-acessar {
@@ -81,10 +75,11 @@ main {
     bottom: 30px;
     right: 30px;
     background-color: #BE0D00;
-   border: none;
-   padding: 10px 40px;
-   border-radius: 79px;
-   font-size: 14px;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 79px;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .button {
