@@ -1,6 +1,11 @@
 import {Layout} from 'antd';
 import './Css/Home.css';
+import {
+    TeamOutlined,
+    FormOutlined,
+  } from '@ant-design/icons';
 const {Content} = Layout;
+
 
 const Andamento = () => {
     return (
@@ -8,10 +13,11 @@ const Andamento = () => {
         <Content>
             <div>
             <button>
-                <span>Atividades</span>
+            <FormOutlined />
             </button>
+    
             <button>
-                <span>Reuniões</span>
+            <TeamOutlined />
             </button>
             </div>
         </Content>
