@@ -1,5 +1,5 @@
 import {Layout} from 'antd';
-import './home.css'
+import './Css/Home.css';
 const {Content} = Layout;
 
 const Andamento = () => {

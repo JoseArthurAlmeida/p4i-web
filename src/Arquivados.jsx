@@ -1,4 +1,6 @@
 import {Layout} from 'antd';
+import Barrafiltro from './components/Barrafiltro';
+
 const {Content} = Layout;
 
 const ProjetosArquivados = () => {
@@ -7,7 +9,7 @@ const ProjetosArquivados = () => {
     <Layout>
       <Content>
         <div>
-          <h>EM DESENVOLVIMENTO!!!!!</h>
+          <Barrafiltro />
         </div>
       </Content> 
     </Layout>

@@ -13,14 +13,15 @@ h1{
 }
 
 main {
+  margin: '24px 16px';
+  padding: 240;
+  min-height: 510;
   text-align: left;
   vertical-align: center;
   line-height: 5vh;
   border-radius: 20px;
   background: #FFF;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
-  width: 70rem;
-  height: 10rem;
   flex-shrink: 0;
 }
 

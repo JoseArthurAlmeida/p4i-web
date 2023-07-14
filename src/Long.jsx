@@ -1,7 +1,7 @@
 import { UserOutlined , KeyOutlined } from '@ant-design/icons';
 import { Button, Input } from 'antd';
 import { NavLink } from 'react-router-dom';
-import logo from './components/images/logo.png';
+import logo from './images/logo.png';
 
 const Login = () => {
   return (

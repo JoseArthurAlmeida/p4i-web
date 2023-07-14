@@ -6,8 +6,8 @@ import {
 } from '@ant-design/icons';
 import {FaGoogleDrive} from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-import PieChart from './grafico';
-import "./home.css"
+import PieChart from './components/Grafico';
+import "./Css/Home.css"
 const { Header, Content} = Layout;
 
 
@@ -28,7 +28,7 @@ const Projeto = () =>  (
               <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}></Button>
             </a>
             <a href='https://drive.google.com/drive' target="_blank">
-              <Button type="text" icon={<FaGoogleDrive style={{ fontSize: '30px' }} />}></Button>
+              <Button type="text" icon={<FaGoogleDrive style={{ fontSize: '28px' }} />}></Button>
             </a>
       </div>
     </Header>
