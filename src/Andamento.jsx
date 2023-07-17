@@ -1,9 +1,8 @@
 import {Layout} from 'antd';
 import './Css/Home.css';
-import {
-    TeamOutlined,
-    FormOutlined,
-  } from '@ant-design/icons';
+import {LuClipboardSignature} from 'react-icons/lu';
+import {ImBubbles2} from 'react-icons/im';
+import { NavLink } from 'react-router-dom';
 const {Content} = Layout;
 
 
@@ -12,13 +11,19 @@ const Andamento = () => {
     <Layout>
         <Content>
             <div>
-            <button>
-            <FormOutlined />
-            </button>
+              <NavLink to='/atividades'>
+                <button>
+                  <LuClipboardSignature />
+                  <span>Atividades</span>
+                </button>
+              </NavLink>
     
-            <button>
-            <TeamOutlined />
-            </button>
+              <NavLink to='/reunioes'>
+                <button>
+                  <ImBubbles2 />
+                  <span>Reunião</span>
+                </button>
+              </NavLink>
             </div>
         </Content>
     </Layout>    

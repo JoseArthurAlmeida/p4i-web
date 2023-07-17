@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart } from 'react-google-charts';
 
-const PieChart = () => {
+const Grafico = () => {
     // Dados do gráfico
     const data = [
       ['Categoria', 'Valor'],
@@ -28,4 +28,4 @@ const PieChart = () => {
     );
   };
 
-  export default PieChart;
+  export default Grafico;

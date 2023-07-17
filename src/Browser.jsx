@@ -4,7 +4,9 @@ import Login from "./Long"
 import Inseri from "./Inseri" 
 import Projeto from "./Projeto"
 import ProjetosArquivados from "./Arquivados"
-import Andamento from "./Andamento"
+import Andamento from "./Andamento";
+import Atividades from "./Atividades";
+import Reunioes from "./Reunioes"
 
 const Browser = () => {
   const router = createBrowserRouter([
@@ -17,6 +19,8 @@ const Browser = () => {
         { path: "/projeto", element: <Projeto/>},
         { path: "/andamento", element: <Andamento/> },
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
+        { path: "/atividades", element: <Atividades/> },
+        { path: "/reunioes", element: <Reunioes/> },
       ]
     }]);
   return (

@@ -6,8 +6,8 @@ import {
 } from '@ant-design/icons';
 import {FaGoogleDrive} from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-import PieChart from './components/Grafico';
 import "./Css/Home.css"
+import Grafico from './components/Grafico';
 const { Header, Content} = Layout;
 
 
@@ -60,7 +60,7 @@ const Projeto = () =>  (
                 <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
-           <PieChart />     
+           <Grafico />     
       </Content>
     </Layout>
 );
