@@ -7,6 +7,7 @@ import ProjetosArquivados from "./Arquivados"
 import Andamento from "./Andamento";
 import Atividades from "./Atividades";
 import Reunioes from "./Reunioes"
+import Cadastroreuniao from "./Cadastroreuniao"
 
 const Browser = () => {
   const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const Browser = () => {
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
         { path: "/atividades", element: <Atividades/> },
         { path: "/reunioes", element: <Reunioes/> },
+        { path: "/reunioes/cadastro", element: <Cadastroreuniao/> },
       ]
     }]);
   return (
