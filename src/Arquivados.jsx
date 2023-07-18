@@ -7,7 +7,12 @@ const ProjetosArquivados = () => {
   
   return (
     <Layout>
-      <Content>
+      <Content 
+      style={{
+        margin: '24px 16px',
+        minHeight: 510,
+        background: 'white',
+      }}>
         <div>
           <Barrafiltro />
         </div>

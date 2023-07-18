@@ -12,17 +12,21 @@ h1{
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
 }
 
+#header{
+  background: #FFF;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  border-radius: 20px;
+}
+
 main {
-  margin: '24px 16px';
-  padding: 240;
-  min-height: 510;
-  text-align: left;
-  vertical-align: center;
+  
+  padding: 0px;
   line-height: 5vh;
   border-radius: 20px;
   background: #FFF;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
-  flex-shrink: 0;
 }
 
 

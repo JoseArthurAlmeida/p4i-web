@@ -12,29 +12,28 @@ const { Header, Content} = Layout;
 
 
 const Projeto = () =>  (
-  <Layout style={{
+  <Layout>
+    <Content
+    style={{
+      margin: '24px 16px',
+      minHeight: 510,
+      background: 'white',
+    }}>
         
-    background: 'white'
-
-
-  }}>
-    <Header style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
-      <div><h1>P.4.I</h1></div>
-      <div style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
-            <a href='https://www.whatsapp.com/?lang=pt_br' target="_blank">
-              <Button type="text" icon={<WhatsAppOutlined style={{ fontSize: '28px' }} />}></Button>
-            </a>
-            <a href='https://about.gitlab.com' target="_blank">
-              <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}></Button>
-            </a>
-            <a href='https://drive.google.com/drive' target="_blank">
-              <Button type="text" icon={<FaGoogleDrive style={{ fontSize: '28px' }} />}></Button>
-            </a>
+      <div id='header'>
+        <div><h1>P.4.I</h1></div>
+        <div style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
+              <a href='https://www.whatsapp.com/?lang=pt_br' target="_blank">
+                <Button type="text" icon={<WhatsAppOutlined style={{ fontSize: '28px' }} />}></Button>
+              </a>
+              <a href='https://about.gitlab.com' target="_blank">
+                <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}></Button>
+              </a>
+              <a href='https://drive.google.com/drive' target="_blank">
+                <Button type="text" icon={<FaGoogleDrive style={{ fontSize: '28px' }} />}></Button>
+              </a>
+        </div>
       </div>
-    </Header>
-      
-      <Content style={{background:"white", display:"flex", justifyContent: "space-between", paddingTop:"10px" }}>
-        
           <div className='content' style={{ marginRight: '10px' }}>
               <section className='conteudos'>
                 <h>Cliente:</h>
@@ -57,10 +56,11 @@ const Projeto = () =>  (
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
                 </section> 
+                <Grafico />
                 <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
-           <Grafico />     
+                
       </Content>
     </Layout>
 );

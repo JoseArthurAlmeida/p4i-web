@@ -1,4 +1,5 @@
-import { UserOutlined , KeyOutlined } from '@ant-design/icons';
+import {FaKey} from 'react-icons/fa';
+import {BsFillPersonFill} from 'react-icons/bs';
 import { Button, Input } from 'antd';
 import { NavLink } from 'react-router-dom';
 import logo from './images/logo.png';
@@ -14,32 +15,19 @@ const Login = () => {
      <h4 style={{ color: 'black', textAlign: 'left',  fontFamily: 'Arial'}}>Usuário:</h4>
         
         <div style={{display: 'flex'}}>
-        <UserOutlined style={{marginRight: 10}}/>
+        <BsFillPersonFill style={{marginRight: 15}}/>
         <Input placeholder= "Email"  style={{ marginBottom: '20px', borderRadius: '50px' }} />
         </div>
         
         <h4 style={{ color: 'black', textAlign: ' left',  fontFamily: 'Arial'}}>Senha:</h4>  
         
      <div style={{ display: 'flex' }}>
-        <KeyOutlined style={{marginRight: 10}}/>
+        <FaKey style={{marginRight: 10}}/>
         <Input.Password placeholder= "Senha"  style={{ marginBottom: '16px', borderRadius: '50px' }} />
         </div>
 
         
         <NavLink to="/inseri"><button class="btn-acessar">Acessar</button></NavLink>
-        <style>
-          {`
-            .btn-red {
-              background-color: red;
-              color: white;
-              border: none;
-              padding: 10px 50px;
-              border-radius: 50px;
-              font-size: 16px;
-              margin-top: 16px;
-            }
-          `}
-        </style>
       </div>
     </div>
   );

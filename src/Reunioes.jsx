@@ -9,12 +9,14 @@ const Reunioes = () => {
     <Layout>
         <Content>
             <div>
-              <h1>Até o momento você não cadastrou reuniões.</h1>
+              <NavLink to='/reuniaoex'>
+                <button>
+                    <h>Reunião X</h><br></br>  
+                    <h>Realizada: 00/00/0000</h>
+                </button>
+              </NavLink>
             </div>
-            <div>
-                <span>Clique aqui e cadastre uma nova reunião</span>
-                <NavLink to='/reunioes/cadastro'><Button type="text" icon={<RiAddCircleFill/>}></Button></NavLink>
-            </div>
+            <NavLink to='/cadastroreunioes'><Button type="text" icon={<RiAddCircleFill/>}></Button></NavLink>
         </Content>
     </Layout>    
     );

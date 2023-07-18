@@ -6,8 +6,11 @@ import Projeto from "./Projeto"
 import ProjetosArquivados from "./Arquivados"
 import Andamento from "./Andamento";
 import Atividades from "./Atividades";
-import Reunioes from "./Reunioes"
-import Cadastroreuniao from "./Cadastroreuniao"
+import Reunioesinseri from "./Reunioesinseri";
+import Cadastroreuniao from "./Cadastroreuniao";
+import Atividadeex from "./Atividadeex";
+import Reunioes from "./Reunioes";
+import Reuniaoex from "./Reuniaoex"
 
 const Browser = () => {
   const router = createBrowserRouter([
@@ -21,8 +24,11 @@ const Browser = () => {
         { path: "/andamento", element: <Andamento/> },
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
         { path: "/atividades", element: <Atividades/> },
+        { path: "/reunioesinseri", element: <Reunioesinseri/> },
+        { path: "/cadastroreunioes", element: <Cadastroreuniao/> },
+        { path: "/atividadeex", element: <Atividadeex/> },
         { path: "/reunioes", element: <Reunioes/> },
-        { path: "/reunioes/cadastro", element: <Cadastroreuniao/> },
+        { path: "/reuniaoex", element: <Reuniaoex/> },
       ]
     }]);
   return (
