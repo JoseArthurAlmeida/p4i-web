@@ -16,6 +16,32 @@ const ProjetosArquivados = () => {
         <div>
           <Barrafiltro />
         </div>
+        <div> 
+        <button>
+            <span>P1</span>
+        </button>
+
+        <button>
+           <span>P2</span>     
+        </button>
+
+        <button>
+            <span>P3</span>          
+        </button>
+
+         <button>
+             <span>P4</span>
+          </button>
+
+        <button>
+           <span>P5</span>      
+        </button>
+
+        <button>
+            <span>P6</span>     
+           </button>
+           
+        </div>
       </Content> 
     </Layout>
   );
