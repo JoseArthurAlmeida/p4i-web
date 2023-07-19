@@ -13,12 +13,7 @@ const { Header, Content} = Layout;
 
 const Projeto = () =>  (
   <Layout>
-    <Content
-    style={{
-      margin: '24px 16px',
-      minHeight: 510,
-      background: 'white',
-    }}>
+    <Content>
         
       <div id='header'>
         <div><h1>P.4.I</h1></div>
@@ -60,9 +55,8 @@ const Projeto = () =>  (
                 <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>
            </div>
-                
-      </Content>
-    </Layout>
+      </Content>           
+     </Layout>
 );
 
 export default Projeto;

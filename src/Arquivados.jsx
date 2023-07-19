@@ -1,4 +1,5 @@
 import {Layout} from 'antd';
+import { NavLink } from 'react-router-dom';
 import Barrafiltro from './components/Barrafiltro';
 
 const {Content} = Layout;
@@ -17,29 +18,30 @@ const ProjetosArquivados = () => {
           <Barrafiltro />
         </div>
         <div> 
-        <button>
-            <span>P1</span>
-        </button>
-
-        <button>
-           <span>P2</span>     
-        </button>
-
-        <button>
-            <span>P3</span>          
-        </button>
-
-         <button>
-             <span>P4</span>
+          <NavLink to='/vilarquivo'>
+            <button>
+              <span>P1</span>
+            </button>
+          </NavLink>
+          <button>
+            <span>P2</span>     
           </button>
 
-        <button>
-           <span>P5</span>      
-        </button>
+          <button>
+              <span>P3</span>          
+          </button>
 
-        <button>
-            <span>P6</span>     
-           </button>
+          <button>
+              <span>P4</span>
+            </button>
+
+          <button>
+            <span>P5</span>      
+          </button>
+
+          <button>
+              <span>P6</span>     
+          </button>
            
         </div>
       </Content> 

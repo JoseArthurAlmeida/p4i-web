@@ -10,7 +10,8 @@ import Reunioesinseri from "./Reunioesinseri";
 import Cadastroreuniao from "./Cadastroreuniao";
 import Atividadeex from "./Atividadeex";
 import Reunioes from "./Reunioes";
-import Reuniaoex from "./Reuniaoex"
+import Reuniaoex from "./Reuniaoex";
+import Vilarquivo from "./Vilarquivo"
 
 const Browser = () => {
   const router = createBrowserRouter([
@@ -29,6 +30,7 @@ const Browser = () => {
         { path: "/atividadeex", element: <Atividadeex/> },
         { path: "/reunioes", element: <Reunioes/> },
         { path: "/reuniaoex", element: <Reuniaoex/> },
+        { path: "/vilarquivo", element: <Vilarquivo/> },
       ]
     }]);
   return (

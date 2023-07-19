@@ -1,15 +1,12 @@
-import {
-  MenuFoldOutlined,
-  HomeOutlined,
-  FolderOpenOutlined,
-} from '@ant-design/icons';
 import { Button, Layout, Menu } from 'antd';
 import { useState } from 'react';
+import Projeto from './Projeto'
 
 const { Header, Sider, Content } = Layout;
 const Inseri = () => {
-  const [collapsed, setCollapsed] = useState(false);
+  const [temProjeto, setTemProjeto] = useState(false);
   return (
+    
     <Layout>
         <Content
           
@@ -20,11 +17,20 @@ const Inseri = () => {
             background: 'white',
           }}
         >
-   <h2 style={{ color: 'black', textAlign: ' left',  fontFamily: 'Arial'}}>No momento você não está inserido em um projeto 
-   </h2> 
-<hr style={{ borderTop: '5px solid #085C16', marginRight: '1000px' }} />
+          {temProjeto ? (
+
+            <Projeto/>
+
+          ) : (
+            <>
+            <h2 style={{ color: 'black', textAlign: ' left',  fontFamily: 'Arial'}}>No momento você não está inserido em um projeto 
+            </h2> 
+            <hr style={{ borderTop: '5px solid #085C16', marginRight: '1000px' }} />
+            </>
+          )}
         </Content>
-      </Layout>
+
+    </Layout>
   );
 };
 
