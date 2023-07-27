@@ -15,16 +15,16 @@ const Andamento = () => {
           minHeight: 510,
           background: 'white',
         }}>
-            <div>
+            <div> 
               <NavLink to='/atividades'>
-                <button>
+                <button className="btn-at">
                   <LuClipboardSignature />
                   <span>Atividades</span>
                 </button>
               </NavLink>
     
               <NavLink to='/reunioesinseri'>
-                <button>
+                <button className="btn-rn">
                   <ImBubbles2 />
                   <span>Reunião</span>
                 </button>
