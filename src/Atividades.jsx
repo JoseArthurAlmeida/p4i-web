@@ -5,8 +5,7 @@ const {Content} = Layout;
 
 const Atividades = () => {
     return (
-    <Layout>
-        <Content>
+    <>
             <div>
               <NavLink to='/atividadeex'>
                 <button>
@@ -43,8 +42,7 @@ const Atividades = () => {
                 </button>
               </NavLink>
             </div>
-        </Content>
-    </Layout>    
+    </>       
     );
   };
   

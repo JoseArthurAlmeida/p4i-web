@@ -8,26 +8,37 @@ h1{
 
 #menu{
   background: #085c16;
-    height: 100vh;
-    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
+  height: 100vh;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
 }
 
 #header{
+  margin: 24px 16px;
   background: #FFF;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
-  border-radius: 20px;
 }
 
 main {
-  
+  margin: 24px 16px;
+  padding: 240;
+  min-height: 510;
+  top: 20 px;
+  right: 20 px;
   padding: 0px;
   line-height: 5vh;
   border-radius: 20px;
   background: #FFF;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
 }
+/*.teste{
+  position: center;
+  margin: '24px 16px';
+  top: 20 px;
+  right: 20 px;
+
+}*/
 
 
 :where(.css-dev-only-do-not-override-1wazalj)[class^="ant-layout"], :where(.css-dev-only-do-not-override-1wazalj)[class*=" ant-layout"] {
@@ -101,4 +112,11 @@ main {
 .button span {
   display: block;
   margin-top: 5px;
+}
+
+.content{
+  margin: 24px 16px;
+  display: flex;
+  justify-content: space-between;
+  
 }

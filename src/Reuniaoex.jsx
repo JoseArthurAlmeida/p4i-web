@@ -6,12 +6,7 @@ const {Content} = Layout;
 const Reuniaoex = () => {
     return (
     <Layout>
-        <Content
-        style={{
-            margin: '24px 16px',
-            minHeight: 510,
-            background: 'white',
-          }}>
+        <Content>
             <div>
                 <h>Reunião X</h>
                 <span>Realizada: 00/00/0000</span>

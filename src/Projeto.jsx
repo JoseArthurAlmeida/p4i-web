@@ -29,13 +29,13 @@ const Projeto = () =>  (
               </a>
         </div>
       </div>
-          <div className='content' style={{ marginRight: '10px' }}>
-              <section className='conteudos'>
-                <h>Cliente:</h>
+          <div className='content'>
+              <div className='conteudos'>
+                <h>Cliente:</h><br></br>
                 <p>Nome comleto do cliente</p>
-              </section>
+              </div>
           
-              <section> 
+              <div> 
                 <h>Integrantes:</h>
                   <ul>
                     <li>Participante 1</li>
@@ -44,13 +44,13 @@ const Projeto = () =>  (
                     <li>Participante 4</li>
                     <li>Participante 5</li>
                   </ul>  
-              </section>
+              </div>
           </div>
-          <div className='content'  style={{ marginLeft: '10px' }}>
-                <section className='conteudos'>
+          <div className='content'>
+                <div className='conteudos'>
                       <h>Descrição:</h>
                       <p>Descrição geral do projeto</p>
-                </section> 
+                </div> 
                 <Grafico />
                 <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
                 <link rel="stylesheet" href="home/button.andamento"></link>

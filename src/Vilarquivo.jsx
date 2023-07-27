@@ -7,12 +7,7 @@ const {Content} = Layout;
 const Vilarquivo = () => {
     return (
     <Layout>
-        <Content
-        style={{
-            margin: '24px 16px',
-            minHeight: 510,
-            background: 'white',
-          }}>
+        <Content>
             <div><h1>P1</h1></div>
 
             <div className='content' style={{ marginRight: '10px' }}>
