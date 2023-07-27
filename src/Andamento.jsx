@@ -11,19 +11,19 @@ const Andamento = () => {
     return (
       <>
             
-                <NavLink to='/atividades'>
-                  <button id='btn-at'>
-                    <LuClipboardSignature /><br></br>
-                    <span>Atividades</span>
-                  </button>
-                </NavLink>
+        <NavLink to='/atividades'>
+          <button id='btn-at'>
+            <LuClipboardSignature /><br></br>
+            <span>Atividades</span>
+          </button>
+        </NavLink>
              
-              <NavLink to='/reunioesinseri'>
-                <button id='btn-rn'>
-                  <ImBubbles2 /><br></br>
-                  <span>Reunião</span>
-                </button>
-              </NavLink>
+        <NavLink to='/reunioesinseri'>
+          <button id='btn-rn'>
+            <ImBubbles2 /><br></br>
+            <span>Reunião</span>
+          </button>
+        </NavLink>
       </>          
     );
   };
