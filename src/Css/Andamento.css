@@ -29,6 +29,7 @@
     position: relative;
     top: 230px;
     left: 150px;
+    border: none;
 
 }
 
@@ -48,4 +49,10 @@
     position: relative;
     top: 230px;
     left: 400px;
+    border: none;
+}
+
+.ta {
+    width: 20px;
+    height: 350px;
 }
