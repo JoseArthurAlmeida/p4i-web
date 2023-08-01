@@ -10,7 +10,7 @@ const Atividades = () => {
     <>
             <div id='conteudo'>
               <NavLink to='/atividadeex'>
-                <button>
+                <button className='btn-atividades'>
                   <div id='conteudo-btn'>
                   <div id='titulo-status'>
                     <h>"Título da atividade"</h>
@@ -24,7 +24,7 @@ const Atividades = () => {
             
             
               <NavLink to='/atividadeex'>
-                <button>
+                <button className='btn-atividades'>
                   <div>
                     <h>"Título da atividade"</h>
                     <span>Status: 0</span>
@@ -36,7 +36,7 @@ const Atividades = () => {
             
             
               <NavLink to='/atividadeex'>
-                <button>
+                <button className='btn-atividades'>
                   <div>
                     <h>"Título da atividade"</h>
                     <span>Status: 0</span>
