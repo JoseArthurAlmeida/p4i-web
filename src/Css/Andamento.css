@@ -1,18 +1,3 @@
-/*.btn-andamento{
-    width: 300px;
-    height: 150px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
-    cursor: pointer;
-}
-
-#atividades{
-    top: 100px;
-    left: 100px;
-}*/
-
 #btn-at {
     border-radius: 20px;
     background: #FFF;
@@ -50,9 +35,4 @@
     top: 230px;
     left: 400px;
     border: none;
-}
-
-.ta {
-    width: 20px;
-    height: 350px;
 }

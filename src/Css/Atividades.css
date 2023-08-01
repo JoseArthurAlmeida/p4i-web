@@ -1,11 +1,12 @@
 .btn-atividades{
-    margin: 25px 40px;
+    margin: 0 auto;
     width: 350px;
     height: 175px;
     border-radius: 20px;
     background: #FFF;
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
     cursor: pointer;
+    border: none;
 }
 
 #conteudo{
@@ -14,18 +15,37 @@
 }
 
 #titulo-status{
-    margin: 20px 30px;
+    margin: 30px 10px;
+    margin-top: -60px;
     display: flex;
     justify-content: space-between;
     padding-top: 10px;
-    background-color: blue;
-    width: 300px;
+    width: 320px;
     height: 30px;
+    position: absolute;
 }
 
 #conteudo-btn{
-    width: 350px;
-    height: 175px;
-    margin: 0px 0px;
-    background-color: blue;
+   position: absolute;
+    margin: 30px 12px;
+    margin-top: 20px;
+    width: 120px;
+    height: 50px;
+}
+
+.nav{
+    margin: 15px 40px;
+}
+
+#disciplina-pd{
+    margin: 0px -55px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    position: absolute;
+}
+
+.text-btn{
+    font-size: 13.5px;
+    font-weight: bold;
+    font-family: 'Arial';
 }
