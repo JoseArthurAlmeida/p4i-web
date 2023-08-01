@@ -8,32 +8,35 @@ const Vilarquivo = () => {
     return (
     <Layout>
         <Content>
-            <div><h1>P1</h1></div>
+            <div id='titulo-vilarquivo'><h1>P1</h1></div>
 
-            <div className='content' style={{ marginRight: '10px' }}>
-              <section className='conteudos'>
-                <h>Cliente:</h>
-                <p>Nome comleto do cliente</p>
-              </section>
+            <div id='conteudos-pj'>
+          <div class='content'>
+              <div class='conteudos'>
+                <h class='titulos-pj'>Cliente:</h><br></br>
+                <p class='conteudo-de-titulos'>Nome comleto do cliente</p>
+              </div>
           
-              <section> 
-                <h>Integrantes:</h>
-                  <ul>
+              <div> 
+                <h class='titulos-pj'>Integrantes:</h>
+                  <ul id='ul-pj'>
                     <li>Participante 1</li>
                     <li>Participante 2</li>
                     <li>Participante 3</li>
                     <li>Participante 4</li>
                     <li>Participante 5</li>
                   </ul>  
-              </section>
+              </div>
           </div>
-          <div className='content'  style={{ marginLeft: '10px' }}>
-                <section className='conteudos'>
-                      <h>Descrição:</h>
-                      <p>Descrição geral do projeto</p>
-                </section> 
-                <button className="btn-red">Visualizar</button>
+          <div class='content'>
+                <div class='conteudos'>
+                      <h class='titulos-pj'>Descrição:</h>
+                      <p class='conteudo-de-titulos'>Descrição geral do projeto</p>
+                </div> 
+                
            </div>
+              
+         </div>
         </Content>
     </Layout>    
     );
