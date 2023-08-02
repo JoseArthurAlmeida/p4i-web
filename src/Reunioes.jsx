@@ -6,8 +6,7 @@ const {Content} = Layout;
 
 const Reunioes = () => {
     return (
-    <Layout>
-        <Content>
+        <>
             <div>
               <NavLink to='/reuniaoex'>
                 <button>
@@ -17,8 +16,7 @@ const Reunioes = () => {
               </NavLink>
             </div>
             <NavLink to='/cadastroreunioes'><Button type="text" icon={<RiAddCircleFill/>}></Button></NavLink>
-        </Content>
-    </Layout>    
+        </>    
     );
   };
   

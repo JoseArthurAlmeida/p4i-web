@@ -2,7 +2,7 @@ import {Layout, Button} from 'antd';
 import { useState } from 'react';
 import Reunioes from './Reunioes';
 import {RiAddCircleFill} from 'react-icons/ri';
-import "./Css/Reunnião.css"
+import "./Css/Reunioesinseri.css";
 import { NavLink } from 'react-router-dom';
 const {Content} = Layout;
 
@@ -10,8 +10,7 @@ const {Content} = Layout;
 const Reunioesinseri = () => {
     const [temReunioes, setTemReunioes] = useState(false);
     return (
-    <Layout>
-        <Content>
+<>
     
 
         {temReunioes ? (
@@ -20,17 +19,20 @@ const Reunioesinseri = () => {
 
         ) : (
             <>
+            <div id='conteudo-geral'>
                 <div class="clique">
-                <h1>Até o momento você não cadastrou reuniões.</h1>
+                    <h id='titulo-reu'>Até o momento você não cadastrou reuniões.</h><br></br>
+                    <hr id='barra-verde'/>
+                    
                 </div>
-                <div >
-                    <span>Clique aqui e cadastre uma nova reunião</span>
-                    <NavLink to='/cadastroreunioes'><Button class= "clique2" type="text"  icon={<RiAddCircleFill/>}></Button></NavLink>
+                <div id='clique2'>
+                    <h id='titulo-clique2'>Clique aqui e cadastre uma nova reunião</h>
+                    <NavLink to='/cadastroreunioes'><Button type="text"  class='clique2' icon={<RiAddCircleFill/>}></Button></NavLink>
                 </div>
+            </div>
             </>
         )}
-        </Content>
-    </Layout>    
+       </>    
     );
   };
   

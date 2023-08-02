@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Projeto from './Projeto';
-import './Css/Home.css';
+import './Css/Reunioesinseri.css';
 
 const Inseri = () => {
   const [temProjeto, setTemProjeto] = useState(false);
@@ -12,10 +12,11 @@ const Inseri = () => {
             <Projeto/>
 
           ) : (
-            <div id='inseri-pj'>
-              <h2 style={{ color: 'black', textAlign: ' left',  fontFamily: 'Arial'}}>No momento você não está inserido em um projeto 
-              </h2> 
-              <hr style={{right: '5px', width: '200px', margin: '-1.5rem 0px', borderTop: '5px solid #085C16', marginRight: '1000px' }} />
+            <div id='conteudo-geral'>
+                <div class="clique">
+                    <h id='titulo-inseri'>No momento você não está inserido em um projeto.</h><br></br>
+                    <hr id='barra-verde'/>
+                </div>
             </div>
           )}
       </>
