@@ -23,7 +23,7 @@ const Atividadeex = () => {
                 <span>Adicionar Link:</span>
                 <input/>
             </div>
-            <button>Entregar</button>
+            <button> Entregar </button>
         </Content>
     </Layout>    
     );

@@ -6,7 +6,7 @@ const {Content} = Layout;
 const Atividades = () => {
     return (
     <>
-            <div>
+      <div>
               <NavLink to='/atividadeex'>
                 <button>
                   <div>
@@ -41,7 +41,7 @@ const Atividades = () => {
                   <h>Disciplina: X</h>
                 </button>
               </NavLink>
-            </div>
+            </div> 
     </>       
     );
   };

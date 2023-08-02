@@ -49,3 +49,21 @@
     top: 230px;
     left: 400px;
 }
+
+.btn-ent {
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    width: 350px;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    top: 230px;
+    left: 400px;
+    }
