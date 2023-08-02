@@ -1,0 +1,15 @@
+.clique{
+    margin: 30px;
+    padding: 50px;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 80vh;
+}
+
+.clique2{
+    width: 350px;
+    height: 175px;
+    border-radius: 20px;
+
+}

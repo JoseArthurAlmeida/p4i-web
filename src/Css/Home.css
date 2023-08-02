@@ -1,45 +1,9 @@
-h1{
-  font-size: 2em;
-  font-weight: bold;
-  font-family: 'Arial';
-  margin: 0px;
-  padding: 0px;
-}
-
+/* Configurações do menu*/
 #menu{
   background: #085c16;
   height: 100vh;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
 }
-
-#header{
-  margin: 24px 16px;
-  background: #FFF;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-
-main {
-  margin: 24px 16px;
-  padding: 240;
-  min-height: 510;
-  top: 20 px;
-  right: 20 px;
-  padding: 0px;
-  line-height: 5vh;
-  border-radius: 20px;
-  background: #FFF;
-  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
-}
-/*.teste{
-  position: center;
-  margin: '24px 16px';
-  top: 20 px;
-  right: 20 px;
-
-}*/
-
 
 :where(.css-dev-only-do-not-override-1wazalj)[class^="ant-layout"], :where(.css-dev-only-do-not-override-1wazalj)[class*=" ant-layout"] {
   font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
@@ -53,36 +17,38 @@ main {
 }
 
 :where(.css-dev-only-do-not-override-1wazalj).ant-layout .ant-layout-sider-trigger {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   z-index: 1;
   height: 48px;
   color: #fff;
   line-height: 48px;
   text-align: center;
-  background: #002140;
+  background: #085c16;
   cursor: pointer;
   transition: all 0.2s;
 }
-
 
 .custom-menu-item {
   background-color: #00000000;
   color: #ffffff;
 }
+/*///////////////////////////////////////////////*/
 
-.btn-red {
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-  background-color: #BE0D00;
-  color: #ffffff;
-  border: none;
-  padding: 10px 40px;
-  border-radius: 79px;
-  font-size: 14px;
-  cursor: pointer;
-  }
+/* Configurações da tag main prensente na maioria das telas (caixa branca de fundo) */
+main {     
+  margin: 24px 16px;
+  padding: 240;
+  min-height: 510;
+  top: 20 px;
+  right: 20 px;
+  padding: 0px;
+  line-height: 5vh;
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
+}
+/*///////////////////////////////////////////////*/
 
 .btn-acessar {
     position: center;
@@ -92,9 +58,10 @@ main {
     background-color: #BE0D00;
     border: none;
     padding: 10px 40px;
-    border-radius: 79px;
+    border-radius: 90px;
     font-size: 14px;
     cursor: pointer;
+
 }
 
 .button {
@@ -107,16 +74,102 @@ main {
   cursor: pointer;
 }
 
-
-
 .button span {
   display: block;
   margin-top: 5px;
 }
 
+/* Tela de "Projeto", tambem serve para a tela de vilarquivo*/
+
 .content{
+  display: flex;
+  flex-direction: column;
   margin: 24px 16px;
+}
+
+#header{
+  margin: 20px 30px;
   display: flex;
   justify-content: space-between;
-  
+  padding-top: 10px;
+}
+
+h1{
+  font-size: 35px;
+  font-weight: bold;
+  font-family: 'Arial';
+  text-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+  margin: 0px;
+  padding: 0px;
+}
+
+#titulo-vilarquivo{
+  margin: 20px 30px;
+  width: 40px;
+  height: 30px;
+}
+
+.conteudo-de-titulos{
+  margin: 0px 10px;
+}
+
+.titulos-pj{
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Arial';
+  margin: 0px;
+  padding: 0px;
+}
+
+#ul-pj{
+  margin: 0px 0px;
+}
+
+li{
+  margin: -5px -15px;
+}
+
+.conteudos{
+  margin: 3rem 0;
+}
+
+#conteudos-pj{
+  margin: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.btn-red {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  background-color: #BE0D00;
+  color: #ffffff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/*///////////////////////////////////////////////*/
+
+/*Tela atividades*/
+
+
+
+/*///////////////////////////////////////////////*/
+
+
+
+
+#inseri-pj{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 550px;
+  height: 100px;
 }

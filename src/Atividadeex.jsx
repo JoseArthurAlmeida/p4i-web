@@ -1,4 +1,5 @@
 import {Layout} from 'antd';
+import "./Css/Atividadeex.css"
 const {Content} = Layout;
 
 
@@ -11,19 +12,31 @@ const Atividadeex = () => {
             minHeight: 510,
             background: 'white',
           }}>
-            <div>
+            <div class="ta">
+
                 <h>"Título da atividade"</h>
+
                 <span>Status: 0</span>
                 
-                <span>Disciplina: X</span>
-            </div>
+
+            <div>  
             <span>Prazo: 00/00/0000</span><br/>
+                 </div>
+
+                 <div class= "di">
+                <span>Disciplina: X</span>
+                </div>
+
+                <div>
             <h>Descrição geral da atividade</h>
-            <div>
+                </div>
+
+                <div>
                 <span>Adicionar Link:</span>
                 <input/>
+                 </div>
             </div>
-            <button> Entregar </button>
+            <button class= "bnt-entegra"> Entregar </button>
         </Content>
     </Layout>    
     );

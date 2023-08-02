@@ -29,15 +29,16 @@ const Projeto = () =>  (
               </a>
         </div>
       </div>
-          <div className='content'>
-              <div className='conteudos'>
-                <h>Cliente:</h><br></br>
-                <p>Nome comleto do cliente</p>
+      <div id='conteudos-pj'>
+          <div class='content'>
+              <div class='conteudos'>
+                <h class='titulos-pj'>Cliente:</h><br></br>
+                <p class='conteudo-de-titulos'>Nome comleto do cliente</p>
               </div>
           
               <div> 
-                <h>Integrantes:</h>
-                  <ul>
+                <h class='titulos-pj'>Integrantes:</h>
+                  <ul id='ul-pj'>
                     <li>Participante 1</li>
                     <li>Participante 2</li>
                     <li>Participante 3</li>
@@ -46,16 +47,19 @@ const Projeto = () =>  (
                   </ul>  
               </div>
           </div>
-          <div className='content'>
-                <div className='conteudos'>
-                      <h>Descrição:</h>
-                      <p>Descrição geral do projeto</p>
+          <div class='content'>
+                <div class='conteudos'>
+                      <h class='titulos-pj'>Descrição:</h>
+                      <p class='conteudo-de-titulos'>Descrição geral do projeto</p>
                 </div> 
-                <Grafico />
-                <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
-                <link rel="stylesheet" href="home/button.andamento"></link>
+                <Grafico/>
+                
            </div>
-      </Content>           
+              
+         </div>  
+           <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
+      </Content>
+                 
      </Layout>
 );
 
