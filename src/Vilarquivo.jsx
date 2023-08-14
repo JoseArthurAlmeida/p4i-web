@@ -14,7 +14,7 @@ const Vilarquivo = () => {
           <div class='content'>
               <div class='conteudos'>
                 <h class='titulos-pj'>Cliente:</h><br></br>
-                <p class='conteudo-de-titulos'>Nome comleto do cliente</p>
+                <p class='conteudo-de-titulos'>Nome completo do cliente</p>
               </div>
           
               <div> 
@@ -37,6 +37,9 @@ const Vilarquivo = () => {
            </div>
               
          </div>
+
+          <div id='position-bntred'><NavLink to="/projetosarquivados"><button className="btn-red">Fechar</button></NavLink></div>
+         
         </Content>
     </Layout>    
     );
