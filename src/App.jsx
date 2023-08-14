@@ -1,15 +1,14 @@
 import {
-  MenuFoldOutlined,
   HomeOutlined,
   FolderOpenOutlined,
 } from '@ant-design/icons';
-import { Button, Layout, Menu} from 'antd'; 
+import {Layout, Menu} from 'antd'; 
 import { Outlet, NavLink } from "react-router-dom";
 import './Css/Home.css';
 
 
 
-const { Header, Sider, Content } = Layout;
+const {Sider} = Layout;
 
 const App = () => {
 
@@ -20,10 +19,18 @@ const App = () => {
         <Menu
           theme="light"
           mode="inline"
-          defaultSelectedKeys={[' ']}
-          id="menu">
-          <NavLink to="/projeto"><Menu.Item icon={<HomeOutlined />} className="custom-menu-item">Seu Projeto</Menu.Item></NavLink>
-          <NavLink to="/projetosarquivados"><Menu.Item icon={<FolderOpenOutlined />} className="custom-menu-item">Projetos Arquivados</Menu.Item></NavLink>
+          defaultSelectedKeys={['1']}
+          style={{ background: '#085C16', height: '100vh' }}
+        >
+          
+          <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">
+            <NavLink to="/projeto">Seu Projeto</NavLink>
+          </Menu.Item>
+
+          
+          <Menu.Item key="2" icon={<FolderOpenOutlined />} className="custom-menu-item">
+            <NavLink to="/projetosarquivados">Projetos Arquivados</NavLink>
+          </Menu.Item>
         </Menu>
       </Sider>
           <Outlet />

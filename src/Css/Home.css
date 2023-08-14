@@ -134,7 +134,7 @@ li{
 }
 
 #conteudos-pj{
-  margin: 10px 60px;
+  margin: 10px 90px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
@@ -151,6 +151,14 @@ li{
   border-radius: 20px;
   font-size: 14px;
   cursor: pointer;
+}
+
+#position-btnred{
+  position: absolute;
+    margin: 0px 30px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
 }
 /*///////////////////////////////////////////////*/
 

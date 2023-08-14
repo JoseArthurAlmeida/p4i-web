@@ -5,23 +5,25 @@ const Grafico = () => {
     // Dados do gráfico
     const data = [
       ['Categoria', 'Valor'],
-      ['Verificada', 33],
       ['Entregue', 33],
-      ['Pendente', 33]
+      ['Pendente', 33],
+      ['Verificada', 33]
     ];
   
     // Opções do gráfico
     const options = {
+      legend: "none",
+      pieSliceText: "label",
       title: 'Desempenho',
       is3D: false,
-      colors: ['#3DBE00', '#FF7A00', '#BE0D00']
+      colors: ['#FF7A00', '#BE0D00', '#3DBE00']
     };
   
     return (
       <Chart
         chartType="PieChart"
-        width="100%"
-        height="150px"
+        width="200px"
+        height="200px"
         data={data}
         options={options}
       />

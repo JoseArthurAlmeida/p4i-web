@@ -2,13 +2,12 @@ import { Button, Layout} from 'antd';
 import {
   WhatsAppOutlined,
   GitlabFilled,
-  FolderAddFilled,
 } from '@ant-design/icons';
 import {FaGoogleDrive} from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 import "./Css/Home.css"
 import Grafico from './components/Grafico';
-const { Header, Content} = Layout;
+const {Content} = Layout;
 
 
 const Projeto = () =>  (
@@ -18,13 +17,13 @@ const Projeto = () =>  (
       <div id='header'>
         <div><h1>P.4.I</h1></div>
         <div style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
-              <a href='https://www.whatsapp.com/?lang=pt_br' target="_blank">
+              <a href='https://www.whatsapp.com/?lang=pt_br' target="blank">
                 <Button type="text" icon={<WhatsAppOutlined style={{ fontSize: '28px' }} />}></Button>
               </a>
-              <a href='https://about.gitlab.com' target="_blank">
+              <a href='https://about.gitlab.com' target="blank">
                 <Button type="text" icon={<GitlabFilled style={{ fontSize: '30px'}} />}></Button>
               </a>
-              <a href='https://drive.google.com/drive' target="_blank">
+              <a href='https://drive.google.com/drive' target="blank">
                 <Button type="text" icon={<FaGoogleDrive style={{ fontSize: '28px' }} />}></Button>
               </a>
         </div>
@@ -33,7 +32,7 @@ const Projeto = () =>  (
           <div class='content'>
               <div class='conteudos'>
                 <h class='titulos-pj'>Cliente:</h><br></br>
-                <p class='conteudo-de-titulos'>Nome comleto do cliente</p>
+                <p class='conteudo-de-titulos'>Nome completo do cliente</p>
               </div>
           
               <div> 
@@ -51,13 +50,14 @@ const Projeto = () =>  (
                 <div class='conteudos'>
                       <h class='titulos-pj'>Descrição:</h>
                       <p class='conteudo-de-titulos'>Descrição geral do projeto</p>
-                </div> 
-                <Grafico/>
+                </div>
+                
+                  <Grafico/>
                 
            </div>
               
          </div>  
-           <NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink>
+           <div id='position-bntred'><NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink></div>
       </Content>
                  
      </Layout>
