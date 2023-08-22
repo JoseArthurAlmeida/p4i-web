@@ -145,6 +145,7 @@ li{
   bottom: 30px;
   right: 30px;
   background-color: #BE0D00;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.50);
   color: #ffffff;
   border: none;
   padding: 10px 40px;

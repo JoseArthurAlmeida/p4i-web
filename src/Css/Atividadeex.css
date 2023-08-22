@@ -1,10 +1,75 @@
-.ta {
-    width: 900px;
-    height: 400px;
+#titulo-status-ex{
+    position: relative;
+    margin: 20px 30px;
+    display: flex;
     justify-content: space-between;
-
+    padding-top: 10px;
 }
-.di {
-    width: 300;
 
+.conteudo-head{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#prazo-atv{
+    position: absolute;
+    margin: 0px 40px;
+    margin-top: 0px;
+}
+
+.conteudo-prazo{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#descricao {
+    position: absolute;
+    margin: 0px 40px;
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-15%, 0%);
+}
+
+
+.text-descricao-link{
+    font-size: 20px;
+}
+
+#add-link{
+    position: absolute;
+    margin: 0px 40px;
+    margin-top: 300px;
+}
+
+#input-atv{
+    margin: 15px 20px;
+    border-radius: 5px;
+    background-color: #E4E4E4;
+    border: 1px solid #000;
+    right: 0px;
+    width: 350px;
+}
+
+
+.btn-cadastrar{
+    position: center;
+    color: #FFF;
+    bottom: 30px;
+    right: 30px;
+    background-color: #BE0D00;
+    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.50);
+    border: none;
+    padding: 10px 40px;
+    border-radius: 79px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#button-position{
+    position: absolute;
+    margin: 0px 30px;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
 }

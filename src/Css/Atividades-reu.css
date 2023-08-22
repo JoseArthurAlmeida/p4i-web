@@ -57,3 +57,10 @@
     font-weight: bold;
     font-family: 'Arial';
 }
+
+:where(.css-dev-only-do-not-override-1wazalj).ant-btn {
+    font-size: 35px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+}
