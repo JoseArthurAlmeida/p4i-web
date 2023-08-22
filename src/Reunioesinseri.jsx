@@ -1,14 +1,13 @@
-import {Layout, Button} from 'antd';
+import {Button} from 'antd';
 import { useState } from 'react';
 import Reunioes from './Reunioes';
 import {RiAddCircleFill} from 'react-icons/ri';
 import "./Css/Reunioesinseri.css";
 import { NavLink } from 'react-router-dom';
-const {Content} = Layout;
 
 
 const Reunioesinseri = () => {
-    const [temReunioes, setTemReunioes] = useState(false);
+    const [temReunioes] = useState(true);
     return (
 <>
     

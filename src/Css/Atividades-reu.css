@@ -1,4 +1,4 @@
-.btn-atividades{
+.btn-atv-reu{
     margin: 0 auto;
     width: 350px;
     height: 175px;
@@ -25,13 +25,21 @@
     position: absolute;
 }
 
-#conteudo-btn{
+#conteudo-btn-atv{
    position: absolute;
     margin: 30px 12px;
     margin-top: 20px;
     width: 120px;
     height: 50px;
 }
+
+#conteudo-btn-reu{
+    position: absolute;
+     margin: 30px 12px;
+     margin-top: 35px;
+     width: 140px;
+     height: 14px;
+ }
 
 .nav{
     margin: 15px 40px;
