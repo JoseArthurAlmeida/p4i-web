@@ -1,5 +1,6 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
+import "./Css/Atividade-reuex.css";
 const {Content} = Layout;
 
 
@@ -7,21 +8,29 @@ const Reuniaoex = () => {
     return (
     <Layout>
         <Content>
-            <div>
-                <h>Reunião X</h>
-                <span>Realizada: 00/00/0000</span>
+            <div id='titulo-status-ex'>
+                <h class='conteudo-head'>Reunião X</h>
+                <h class='conteudo-head'>Realizada: 00/00/0000</h>
             </div>
-            <h>Participantes:</h>
-            <ul>
+
+            <div id='participantes-reu'>
+            <h class='conteudo-titulos-reu'>Participantes:</h>
+            <ul id='ul-reu'>
                 <li>Participante 1</li>
                 <li>Participante 2</li>
                 <li>Participante 3</li>
                 <li>Participante 4</li>
                 <li>Participante 5</li>
             </ul>
-            <h>Objetivo: *************************</h><br/>
-            <h>Ata: ************************</h><br/>  
-            <NavLink to='/reunioes'><button>Fechar</button></NavLink>
+            </div>
+
+            <div id='objetivo-reu'>
+                <h class='conteudo-titulos-reu'>Objetivo: *************************</h>
+            </div>
+            <div id='ata-reu'>
+                <h class='conteudo-titulos-reu'>Ata: ************************</h>
+            </div>  
+            <NavLink to='/reunioes'><button class="btn-cadastrar">Fechar</button></NavLink>
         </Content>
     </Layout>    
     );

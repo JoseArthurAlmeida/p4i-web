@@ -52,11 +52,38 @@
 }
 
 
+#participantes-reu{
+    position: absolute;
+    margin: 0px 60px;
+    margin-top: 30px;
+}
+
+#ul-reu{
+    line-height: 25px;
+}
+
+#objetivo-reu{
+    position: absolute;
+    margin: 0px 60px;
+    margin-top: 300px;
+}
+
+#ata-reu{
+    position: absolute;
+    margin: 0px 60px;
+    margin-top: 375px;
+}
+
+.conteudo-titulos-reu{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .btn-cadastrar{
-    position: center;
+    position: absolute;
     color: #FFF;
     bottom: 30px;
-    right: 30px;
+    right: 50px;
     background-color: #BE0D00;
     box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.50);
     border: none;

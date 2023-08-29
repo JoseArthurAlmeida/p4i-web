@@ -1,0 +1,18 @@
+.btn-arquivados{
+    margin: 0 auto;
+    width: 300px;
+    height: 160px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
+    cursor: pointer;
+    border: none;
+}
+
+.nav-arqv{
+    margin: 15px 40px;
+}
+
+.tres-divs{
+    display: inline-block;
+}

@@ -25,7 +25,7 @@ const Cadastroreuniao = () => {
               <input class='inputcadastro' id='ata'/></div>
             </form>
 
-            <div id='button-position'><button class="btn-cadastrar">Cadastrar</button></div>
+            <div id='button-position'><button class="btn-cadastrar-reu">Cadastrar</button></div>
 
         </Content>
     </Layout>    

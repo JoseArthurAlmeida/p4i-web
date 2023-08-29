@@ -1,50 +1,68 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
+import './Css/Arquivados.css'
 import Barrafiltro from './components/Barrafiltro';
 
-const {Content} = Layout;
 
 const ProjetosArquivados = () => {
   
   return (
     <Layout>
-      <Content 
-      style={{
-        margin: '24px 16px',
-        minHeight: 510,
-        background: 'white',
-      }}>
+      
         <div>
           <Barrafiltro />
         </div>
-        <div id='btn-at'> 
-          <NavLink to='/vilarquivo'>
-            <button>
-              <span>P1</span>
-            </button>
-          </NavLink>
-          <button>
-            <span>P2</span>     
-          </button>
+        
+        <div class='tres-divs'>
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P1</h>
+              </button>
+            </NavLink>
+          </div>
 
-          <button>
-              <span>P3</span>          
-          </button>
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P2</h>
+              </button>
+            </NavLink>
+          </div>
 
-          <button>
-              <span>P4</span>
-            </button>
-
-          <button>
-            <span>P5</span>      
-          </button>
-
-          <button>
-              <span>P6</span>     
-          </button>
-           
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P3</h>
+              </button>
+            </NavLink>
+          </div>
         </div>
-      </Content> 
+
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P4</h>
+              </button>
+            </NavLink>
+          </div>
+
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P5</h>
+              </button>
+            </NavLink>
+          </div>
+
+          <div class='nav-arqv'> 
+            <NavLink to='/vilarquivo'>
+              <button class='btn-arquivados'>
+                <h>P6</h>
+              </button>
+            </NavLink>
+          </div>
+       
     </Layout>
   );
 };
