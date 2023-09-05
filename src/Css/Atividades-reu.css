@@ -1,4 +1,4 @@
-.btn-atv-reu{
+.btn-atv-reu {
     margin: 0 auto;
     width: 350px;
     height: 175px;
@@ -9,12 +9,12 @@
     border: none;
 }
 
-#conteudo{
+#conteudo {
     display: flex;
     flex-direction: column;
 }
 
-#titulo-status{
+#titulo-status {
     margin: 30px 10px;
     margin-top: -60px;
     display: flex;
@@ -25,34 +25,34 @@
     position: absolute;
 }
 
-#conteudo-btn-atv{
-   position: absolute;
+#conteudo-btn-atv {
+    position: absolute;
     margin: 30px 12px;
     margin-top: 20px;
     width: 120px;
     height: 50px;
 }
 
-#conteudo-btn-reu{
+#conteudo-btn-reu {
     position: absolute;
-     margin: 30px 12px;
-     margin-top: 35px;
-     width: 140px;
-     height: 14px;
- }
+    margin: 30px 12px;
+    margin-top: 35px;
+    width: 140px;
+    height: 14px;
+}
 
-.nav{
+.nav {
     margin: 15px 40px;
 }
 
-#disciplina-pd{
+#disciplina-pd {
     margin: 0px -55px;
     margin-bottom: 20px;
     margin-top: 15px;
     position: absolute;
 }
 
-.text-btn{
+.text-btn {
     font-size: 13.5px;
     font-weight: bold;
     font-family: 'Arial';
