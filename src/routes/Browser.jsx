@@ -1,17 +1,17 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import App from "./App"
-import Login from "./Long"
-import Inseri from "./Inseri" 
-import Projeto from "./Projeto"
-import ProjetosArquivados from "./Arquivados"
-import Andamento from "./Andamento";
-import Atividades from "./Atividades";
-import Reunioesinseri from "./Reunioesinseri";
-import Cadastroreuniao from "./Cadastroreuniao";
-import Atividadeex from "./Atividadeex";
-import Reunioes from "./Reunioes";
-import Reuniaoex from "./Reuniaoex";
-import Vilarquivo from "./Vilarquivo"
+import App from "../App"
+import Login from "../Long"
+import Inseri from "../Inseri" 
+import Projeto from "../Projeto"
+import ProjetosArquivados from "../Arquivados"
+import Andamento from "../Andamento";
+import Atividades from "../Atividades";
+import Reunioesinseri from "./pages/reuniao/Reunioesinseri";
+import Cadastroreuniao from "../Cadastroreuniao";
+import Atividadeex from "../Atividadeex";
+import Reunioes from "./pages/reuniao/Reunioes";
+import Reuniaoex from "./pages/reuniao/Reuniaoex";
+import Vilarquivo from "../Vilarquivo"
 
 const Browser = () => {
   const router = createBrowserRouter([

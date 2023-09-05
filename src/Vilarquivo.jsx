@@ -1,6 +1,6 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
-import './Css/Home.css'
+import './css/home.css'
 const {Content} = Layout;
 
 

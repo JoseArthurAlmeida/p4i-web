@@ -1,6 +1,6 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
-import './Css/Arquivados.css'
+import './css/arquivados.css'
 import Barrafiltro from './components/Barrafiltro';
 
 

@@ -1,6 +1,6 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
-import "./Css/Atividade-reuex.css";
+import "./css/atividade-reuex.css";
 const {Content} = Layout;
 
 

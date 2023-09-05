@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Projeto from './Projeto';
-import './Css/Reunioesinseri.css';
+import './css/reunioesinseri.css';
 
 const Inseri = () => {
   const [temProjeto, setTemProjeto] = useState(false);

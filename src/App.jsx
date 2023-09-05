@@ -4,7 +4,7 @@ import {
 } from '@ant-design/icons';
 import {Layout, Menu} from 'antd'; 
 import { Outlet, NavLink } from "react-router-dom";
-import './Css/Home.css';
+import './css/home.css';
 
 const {Sider} = Layout;
 
