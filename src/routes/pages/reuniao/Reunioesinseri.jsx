@@ -2,7 +2,7 @@ import {Button} from 'antd';
 import { useState } from 'react';
 import Reunioes from './Reunioes';
 import {RiAddCircleFill} from 'react-icons/ri';
-import "./css/reunioesinseri.css";
+import "../../../css/reunioesinseri.css";
 import { NavLink } from 'react-router-dom';
 
 

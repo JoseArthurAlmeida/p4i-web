@@ -2,8 +2,8 @@ import { Button, Layout} from 'antd';
 import {WhatsAppOutlined, GitlabFilled,} from '@ant-design/icons';
 import {FaGoogleDrive} from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-import "./css/home.css"
-import Grafico from './components/Grafico';
+import "../../../css/home.css"
+import Grafico from '../../../components/Grafico';
 const {Content} = Layout;
 
 

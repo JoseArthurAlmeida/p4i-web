@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
-import './css/home.css';
-import './css/atividades-reu.css';
+import '../../../css/home.css';
+import '../../../css/atividades-reu.css';
 
 
 

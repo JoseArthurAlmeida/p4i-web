@@ -1,5 +1,5 @@
-import './css/home.css';
-import './css/andamento.css';
+import '../../../css/home.css';
+import '../../../css/andamento.css';
 import {LuClipboardSignature} from 'react-icons/lu';
 import {ImBubbles2} from 'react-icons/im';
 import { NavLink } from 'react-router-dom';

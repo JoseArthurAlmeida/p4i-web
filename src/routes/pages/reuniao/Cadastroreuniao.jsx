@@ -1,5 +1,5 @@
 import {Layout} from 'antd';
-import './css/cadastroreu.css'
+import '../../../css/cadastroreu.css'
 //import { NavLink } from 'react-router-dom';
 const {Content} = Layout;
 

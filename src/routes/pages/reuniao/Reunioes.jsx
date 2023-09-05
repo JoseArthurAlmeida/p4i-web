@@ -1,7 +1,7 @@
 import {Button} from 'antd';
 import {RiAddCircleFill} from 'react-icons/ri';
 import { NavLink } from 'react-router-dom';
-import './css/atividades-reu.css';
+import '../../../css/atividades-reu.css';
 
 
 

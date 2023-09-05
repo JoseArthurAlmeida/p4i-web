@@ -2,7 +2,7 @@ import {FaKey} from 'react-icons/fa';
 import {BsFillPersonFill} from 'react-icons/bs';
 import {Input } from 'antd';
 import { NavLink } from 'react-router-dom';
-import logo from './images/logo.png';
+import logo from '../../../images/logo.png';
 
 const Login = () => {
   return (
