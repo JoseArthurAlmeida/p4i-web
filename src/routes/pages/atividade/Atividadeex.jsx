@@ -1,6 +1,10 @@
 import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
-import "../../../css/atividade-reuex.css";
+import '../../../css/atividade-reuex.css';
+import circulovermelho from '../../../images/circulovermelho.png';
+import circuloamarelo from '../../../images/circuloamarelo.png';
+import circuloverde from '../../../images/circuloverde.png';
+
 const {Content} = Layout;
 
 
@@ -12,8 +16,8 @@ const Atividadeex = () => {
 
                 <h class='conteudo-head'>"Título da atividade"</h>
 
-                <h class='conteudo-head'>Status: 0</h>
-                
+                <h class='conteudo-head'>Status: <img src={circulovermelho}  alt='circulovermelho'/></h>
+               
             </div>
             <div id='prazo-atv'>  
                 <h class='conteudo-prazo'>Prazo: 00/00/0000</h><br></br>
@@ -34,6 +38,9 @@ const Atividadeex = () => {
                     <button class="btn-cadastrar">Entregar</button>
                 </NavLink>    
             </div>
+            
+            
+
         </Content>
     </Layout>    
     );

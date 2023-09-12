@@ -19,7 +19,7 @@ const Cadastroreuniao = () => {
               <input class='inputcadastro' id='participantes' placeholder='Informe os participantes'/></div>
 
               <div class='conteudo-form'><h class='titulos'>Objetivo:</h>
-              <textarea class='inputcadastro' id="objetivo" name="objetivo" placeholder='Informe os participantes' style={{width: '300px', height: '30px', font: 'Arial'}}></textarea></div>
+              <textarea class='inputcadastro' id="objetivo" name="objetivo" placeholder='Descreva o objetivo da reunião realizada' style={{width: '300px', height: '30px', font: 'Arial'}}></textarea></div>
 
               <div class='conteudo-form'><h class='titulos'>Ata:</h>
               <input class='inputcadastro' id='ata'/></div>

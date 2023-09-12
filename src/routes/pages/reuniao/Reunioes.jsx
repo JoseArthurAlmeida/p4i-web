@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import { RiAddCircleFill } from 'react-icons/ri';
 import { NavLink } from 'react-router-dom';
 import '../../../css/atividades-reu.css';
+import botaomais from '../../../images/botaomais.png';
 import conexaoApi from "../../../axios/config";
 
 /*
@@ -57,7 +58,7 @@ const Reunioes = () => {
 
 
       </div>
-      <NavLink to='/cadastroreunioes'><Button type="text" icon={<RiAddCircleFill />}></Button></NavLink>
+      <NavLink to='/cadastroreunioes'><button><img src={botaomais}  alt='botaomais'/></button></NavLink>
     </>
   );
 };
