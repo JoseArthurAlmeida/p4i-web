@@ -2,8 +2,8 @@ import {Layout} from 'antd';
 import { NavLink } from 'react-router-dom';
 import '../../../css/atividade-reuex.css';
 import circulovermelho from '../../../images/circulovermelho.png';
-import circuloamarelo from '../../../images/circuloamarelo.png';
-import circuloverde from '../../../images/circuloverde.png';
+//import circuloamarelo from '../../../images/circuloamarelo.png';
+//import circuloverde from '../../../images/circuloverde.png';
 
 const {Content} = Layout;
 
