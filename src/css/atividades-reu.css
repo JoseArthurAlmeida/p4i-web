@@ -2,7 +2,6 @@
     width: 350px;
     height: 175px;
     border-radius: 20px;
-    background: #05ff2f;
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
     cursor: pointer;
     border: none;
@@ -35,10 +34,9 @@
 margin-top: 35px; */
 #conteudo-btn-reu {
     position: absolute;
-    background: #ff05ea;
-    margin: 0px;
-    width: 240px;
-    height: 14px;
+    margin: 30px 13px;
+    width: 170px;
+    height: 20px;
     padding: 0;
 }
 
@@ -58,7 +56,6 @@ margin-top: 35px; */
     font-size: 18px;
     font-weight: bold;
     font-family: 'Arial';
-    background: #ff7605;
 }
 .text-data {
    font-weight: 600;
