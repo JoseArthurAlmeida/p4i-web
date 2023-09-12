@@ -1,9 +1,8 @@
 .btn-atv-reu {
-    margin: 0 auto;
     width: 350px;
     height: 175px;
     border-radius: 20px;
-    background: #FFF;
+    background: #05ff2f;
     box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
     cursor: pointer;
     border: none;
@@ -32,17 +31,20 @@
     width: 120px;
     height: 50px;
 }
-
+/* // margin: 30px 12px;
+margin-top: 35px; */
 #conteudo-btn-reu {
     position: absolute;
-    margin: 30px 12px;
-    margin-top: 35px;
-    width: 140px;
+    background: #ff05ea;
+    margin: 0px;
+    width: 240px;
     height: 14px;
+    padding: 0;
 }
 
 .nav {
     margin: 15px 40px;
+    padding: 0;
 }
 
 #disciplina-pd {
@@ -52,10 +54,18 @@
     position: absolute;
 }
 
-.text-btn {
-    font-size: 13.5px;
+.text-titulo {
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Arial';
+    background: #ff7605;
+}
+.text-data {
+   font-weight: 600;
+    font-size: 17px;
+    width: 100px;
+    font-family: 'Arial';
+
 }
 
 :where(.css-dev-only-do-not-override-1wazalj).ant-btn {
