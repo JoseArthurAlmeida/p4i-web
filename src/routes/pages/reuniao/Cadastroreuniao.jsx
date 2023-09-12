@@ -3,7 +3,17 @@ import '../../../css/cadastroreu.css'
 //import { NavLink } from 'react-router-dom';
 const {Content} = Layout;
 
+/* requisao post
 
+{
+  "data": {
+    "titulo": "requisicao post",
+    "objetivo": "ver funcioinamento",
+    "ata": "esta funcionando?",
+     "participantes": "d, js, ja"
+  }
+}
+*/
 const Cadastroreuniao = () => {
     return (
     <Layout>
