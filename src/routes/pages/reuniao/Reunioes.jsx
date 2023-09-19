@@ -26,7 +26,6 @@ const Reunioes = () => {
       const data = response.data.data;
 
       setReunioes(data);
-      console.log(data)
 
     } catch (error) {
       console.log(error);
@@ -42,14 +41,14 @@ const Reunioes = () => {
     <>
     <div>
       {
-        reunioes.map((r) => (
-          <div class='nav' key={r.id}>
+        reunioes.map((reuniao) => (
+          <div class='nav' key={reuniao.id}>
             <button class='btn-atv-reu'>
               <div id='titulo-status'>
-                <h class='text-titulo'>{r.attributes.titulo}</h>
+                <h class='text-titulo'>{reuniao.attributes.titulo}</h>
               </div>
               <div id='conteudo-btn-reu'>
-                <h class='text-data'>Realizada: {formataData(r.attributes.data_realizacao)}</h>
+                <h class='text-data'>Realizada: {formataData(reuniao.attributes.data_realizacao)}</h>
               </div>
             </button>
           </div>
@@ -58,8 +57,10 @@ const Reunioes = () => {
 
 
 
+
       
       <NavLink to='/cadastroreunioes'><button id="botao-mais"><img src={botaomais}  alt='botaomais'/></button></NavLink>
+
       </div>
     </>
 
