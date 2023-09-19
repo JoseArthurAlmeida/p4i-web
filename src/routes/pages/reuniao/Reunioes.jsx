@@ -12,7 +12,6 @@ function formataData(dataEntrada) {
   const mes = data.getUTCMonth() + 1; 
   const ano = data.getUTCFullYear();
 
-  const dataFormatada = dia + '/' + mes + '/' + ano;
   const d = dia <= 9 ? '0'+dia : dia
   const m = mes <= 9 ? '0'+mes : mes
   const dataF = `${d}/${m}/${ano}`;
