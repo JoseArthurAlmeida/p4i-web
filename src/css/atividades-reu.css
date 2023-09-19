@@ -65,9 +65,17 @@ margin-top: 35px; */
 
 }
 
-:where(.css-dev-only-do-not-override-1wazalj).ant-btn {
-    font-size: 35px;
-    height: 32px;
-    padding: 4px 15px;
-    border-radius: 6px;
+#botao-mais{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
 }
