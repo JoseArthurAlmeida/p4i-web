@@ -29,7 +29,7 @@ const Browser = () => {
         { path: "/cadastroreunioes", element: <Cadastroreuniao/> },
         { path: "/atividadeex", element: <Atividadeex/> },
         { path: "/reunioes", element: <Reunioes/> },
-        { path: "/reuniaoex", element: <Reuniaoex/> },
+        { path: "/reunioes/:id", element: <Reuniaoex/> },
         { path: "/vilarquivo", element: <Vilarquivo/> },
       ]
     }]);

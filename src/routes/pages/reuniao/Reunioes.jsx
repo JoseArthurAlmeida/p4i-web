@@ -3,20 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../../css/atividades-reu.css';
 import botaomais from '../../../images/botaomais.png';
 import conexaoApi from "../../../axios/config";
-
-function formataData(dataEntrada) {
-  const data = new Date(dataEntrada);
-
-  // Extrair o dia, mês e ano da data
-  const dia = data.getUTCDate();
-  const mes = data.getUTCMonth() + 1; 
-  const ano = data.getUTCFullYear();
-
-  const d = dia <= 9 ? '0'+dia : dia
-  const m = mes <= 9 ? '0'+mes : mes
-  const dataF = `${d}/${m}/${ano}`;
-  return dataF;
-}
+import formataData from "../../../components/funcoes_compartilhadas/formatarData";
 
 const Reunioes = () => {
 
@@ -45,6 +32,7 @@ const Reunioes = () => {
       {
         reunioes.map((reuniao) => (
           <div class='nav' key={reuniao.id}>
+            <NavLink to={`/reunioes/${reuniao.id}`}>
             <button class='btn-atv-reu'>
               <div id='titulo-status'>
                 <h class='text-titulo'>{reuniao.attributes.titulo}</h>
@@ -53,6 +41,7 @@ const Reunioes = () => {
                 <h class='text-data'>Realizada: {formataData(reuniao.attributes.data_realizacao)}</h>
               </div>
             </button>
+            </NavLink>
           </div>
         ))
         }
@@ -69,5 +58,5 @@ const Reunioes = () => {
     
   );
 };
-
+ //to={`/posts/${post.id}`}
 export default Reunioes;
