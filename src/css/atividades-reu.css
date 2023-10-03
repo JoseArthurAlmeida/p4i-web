@@ -7,9 +7,12 @@
     border: none;
 }
 
-#conteudo {
-    display: flex;
-    flex-direction: column;
+.conteudo {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    right: auto;
 }
 
 #titulo-status {
@@ -41,6 +44,9 @@ margin-top: 35px; */
 }
 
 .nav {
+    width: 350px;
+    height: 175px;
+    border-radius: 20px;
     margin: 15px 40px;
     padding: 0;
 }

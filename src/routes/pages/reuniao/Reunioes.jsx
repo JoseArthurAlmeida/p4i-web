@@ -27,8 +27,8 @@ const Reunioes = () => {
 
 
   return (
-    <>
-    <div>
+    
+    <div class='conteudo'>
       {
         reunioes.map((reuniao) => (
           <div class='nav' key={reuniao.id}>
@@ -53,7 +53,7 @@ const Reunioes = () => {
       <NavLink to='/cadastroreunioes'><button id="botao-mais"><img src={botaomais}  alt='botaomais'/></button></NavLink>
 
       </div>
-    </>
+    
 
     
   );
