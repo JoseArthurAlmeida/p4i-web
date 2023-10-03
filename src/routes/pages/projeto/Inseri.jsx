@@ -13,7 +13,7 @@ const Inseri = () => {
 
           ) : (
             <div id='conteudo-geral'>
-                <div class="clique">
+                <div className="clique">
                     <h id='titulo-inseri'>No momento você não está inserido em um projeto.</h><br></br>
                     <hr id='barra-verde'/>
                 </div>

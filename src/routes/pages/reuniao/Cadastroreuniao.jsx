@@ -66,21 +66,21 @@ const Cadastroreuniao = () => {
     <Layout>
       <Content>
         <form id='form' onSubmit={(e) => cadastrarReuniao(e)}>
-          <div class='conteudo-form'><h class='titulos'>Título:</h>
-            <input class='inputcadastro' value={titulo} onChange={mudaEstadoTitulo} id='titulo' placeholder='Dê um título a sua reunião' required/></div>
+          <div className='conteudo-form'><h className='titulos'>Título:</h>
+            <input className='inputcadastro' value={titulo} onChange={mudaEstadoTitulo} id='titulo' placeholder='Dê um título a sua reunião' required/></div>
 
-          <div class='conteudo-form'><h class='titulos'>Data:</h>
-            <input class='inputcadastro' value={data_realizacao} onChange={mudaEstadoData} id='data' type='date' required/></div>
+          <div className='conteudo-form'><h className='titulos'>Data:</h>
+            <input className='inputcadastro' value={data_realizacao} onChange={mudaEstadoData} id='data' type='date' required/></div>
 
-          <div class='conteudo-form'><h class='titulos'>Participantes:</h>
-            <input class='inputcadastro' value={participantes} onChange={mudaEstadoParticipantes} id='participantes' placeholder='Informe os participantes' required/></div>
+          <div className='conteudo-form'><h className='titulos'>Participantes:</h>
+            <input className='inputcadastro' value={participantes} onChange={mudaEstadoParticipantes} id='participantes' placeholder='Informe os participantes' required/></div>
 
-          <div class='conteudo-form'><h class='titulos'>Objetivo:</h>
-            <textarea class='inputcadastro' value={objetivo} onChange={mudaEstadoObjetivo} id="objetivo" name="objetivo" placeholder='Descreva o objetivo da reunião realizada' style={{ width: '300px', height: '30px', font: 'Arial' }} required></textarea></div>
+          <div className='conteudo-form'><h className='titulos'>Objetivo:</h>
+            <textarea className='inputcadastro' value={objetivo} onChange={mudaEstadoObjetivo} id="objetivo" name="objetivo" placeholder='Descreva o objetivo da reunião realizada' style={{ width: '300px', height: '30px', font: 'Arial' }} required></textarea></div>
 
-          <div class='conteudo-form'><h class='titulos'>Ata:</h>
-            <input class='inputcadastro' value={ata} onChange={mudaEstadoAta} id='ata' required/></div>
-          <div id='button-position'><button class="btn-cadastrar-reu">Cadastrar</button></div>
+          <div className='conteudo-form'><h className='titulos'>Ata:</h>
+            <input className='inputcadastro' value={ata} onChange={mudaEstadoAta} id='ata' required/></div>
+          <div id='button-position'><button className="btn-cadastrar-reu">Cadastrar</button></div>
         </form>
 
       </Content>

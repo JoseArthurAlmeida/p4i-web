@@ -34,12 +34,12 @@ const Reuniaoex = () => {
             {reuniao.attributes ? (
                 <Content>
                 <div id='titulo-status-ex'>
-                    <h class='conteudo-head'>{reuniao.attributes.titulo}</h>
-                    <h class='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
+                    <h className='conteudo-head'>{reuniao.attributes.titulo}</h>
+                    <h className='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
                 </div>
 
                 <div id='participantes-reu'>
-                    <h class='conteudo-titulos-reu'>Participantes:</h>
+                    <h className='conteudo-titulos-reu'>Participantes:</h>
                     <ul id='ul-reu'>
                         <li>Participante 1</li>
                         <li>Participante 2</li>
@@ -50,12 +50,12 @@ const Reuniaoex = () => {
                 </div>
 
                 <div id='objetivo-reu'>
-                    <h class='conteudo-titulos-reu'>{`Objetivo: ${reuniao.attributes.objetivo}`}</h>
+                    <h className='conteudo-titulos-reu'>{`Objetivo: ${reuniao.attributes.objetivo}`}</h>
                 </div>
                 <div id='ata-reu'>
-                    <h class='conteudo-titulos-reu'>{`Ata: ${reuniao.attributes.ata}`}</h>
+                    <h className='conteudo-titulos-reu'>{`Ata: ${reuniao.attributes.ata}`}</h>
                 </div>
-                <NavLink to='/reunioes'><button class="btn-cadastrar">Fechar</button></NavLink>
+                <NavLink to='/reunioes'><button className="btn-cadastrar">Fechar</button></NavLink>
             </Content>
 
             ) : (<><h>carregando</h></>)}

@@ -28,17 +28,17 @@ const Reunioes = () => {
 
   return (
     
-    <div class='conteudo'>
+    <div className='conteudo'>
       {
         reunioes.map((reuniao) => (
-          <div class='nav' key={reuniao.id}>
+          <div className='nav' key={reuniao.id}>
             <NavLink to={`/reunioes/${reuniao.id}`}>
-            <button class='btn-atv-reu'>
+            <button className='btn-atv-reu'>
               <div id='titulo-status'>
-                <h class='text-titulo'>{reuniao.attributes.titulo}</h>
+                <h className='text-titulo'>{reuniao.attributes.titulo}</h>
               </div>
               <div id='conteudo-btn-reu'>
-                <h class='text-data'>Realizada: {formataData(reuniao.attributes.data_realizacao)}</h>
+                <h className='text-data'>Realizada: {formataData(reuniao.attributes.data_realizacao)}</h>
               </div>
             </button>
             </NavLink>

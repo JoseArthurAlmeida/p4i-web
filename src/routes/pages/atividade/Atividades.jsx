@@ -27,21 +27,21 @@ const Atividades = () => {
 
   return (
     <>
-      <div class='conteudo'>
+      <div className='conteudo'>
         {
           atividades.map((atividade) => (
-          <div class='nav' key={atividade.id}>
+          <div className='nav' key={atividade.id}>
             
             <NavLink to={`/atividadeex/${atividade.id}`}>
-              <button class='btn-atv-reu'>
+              <button className='btn-atv-reu'>
 
                 <div id='titulo-status'>
-                  <h class='text-btn'>"Título da atividade"</h>
-                  <h class='text-btn'>Status: 0</h>
+                  <h className='text-btn'>"Título da atividade"</h>
+                  <h className='text-btn'>Status: 0</h>
                 </div>
                 <div id='conteudo-btn-atv'>
-                  <h class='text-btn'>Prazo: 00/00/0000</h><br />
-                  <h id='disciplina-pd' class='text-btn'>Disciplina: X</h>
+                  <h className='text-btn'>Prazo: 00/00/0000</h><br />
+                  <h id='disciplina-pd' className='text-btn'>Disciplina: X</h>
                 </div>
               </button>
               </NavLink>

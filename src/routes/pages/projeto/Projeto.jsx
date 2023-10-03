@@ -26,14 +26,14 @@ const Projeto = () =>  (
         </div>
       </div>
       <div id='conteudos-pj'>
-          <div class='content'>
-              <div class='conteudos'>
-                <h class='titulos-pj'>Cliente:</h><br></br>
-                <p class='conteudo-de-titulos'>Nome completo do cliente</p>
+          <div className='content'>
+              <div className='conteudos'>
+                <h className='titulos-pj'>Cliente:</h><br></br>
+                <p className='conteudo-de-titulos'>Nome completo do cliente</p>
               </div>
           
               <div> 
-                <h class='titulos-pj'>Integrantes:</h>
+                <h className='titulos-pj'>Integrantes:</h>
                   <ul id='ul-pj'>
                     <li>Participante 1</li>
                     <li>Participante 2</li>
@@ -43,10 +43,10 @@ const Projeto = () =>  (
                   </ul>  
               </div>
           </div>
-          <div class='content'>
-                <div class='conteudos'>
-                      <h class='titulos-pj'>Descrição:</h>
-                      <p class='conteudo-de-titulos'>Descrição geral do projeto</p>
+          <div className='content'>
+                <div className='conteudos'>
+                      <h className='titulos-pj'>Descrição:</h>
+                      <p className='conteudo-de-titulos'>Descrição geral do projeto</p>
                 </div>
                 
                   <Grafico/>

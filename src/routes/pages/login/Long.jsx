@@ -27,7 +27,7 @@ const Login = () => {
         </div>
 
         
-        <NavLink to="/inseri"><button class="btn-acessar">Acessar</button></NavLink>
+        <NavLink to="/inseri"><button className="btn-acessar">Acessar</button></NavLink>
       </div>
     </div>
   );

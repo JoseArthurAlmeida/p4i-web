@@ -19,14 +19,14 @@ const Reunioesinseri = () => {
         ) : (
             <>
             <div id='conteudo-geral'>
-                <div class="clique">
+                <div className="clique">
                     <h id='titulo-reu'>Até o momento você não cadastrou reuniões.</h><br></br>
                     <hr id='barra-verde'/>
                     
                 </div>
                 <div id='clique2'>
                     <h id='titulo-clique2'>Clique aqui e cadastre uma nova reunião</h>
-                    <NavLink to='/cadastroreunioes'><Button type="text"  class='clique2' icon={<RiAddCircleFill/>}></Button></NavLink>
+                    <NavLink to='/cadastroreunioes'><Button type="text"  className='clique2' icon={<RiAddCircleFill/>}></Button></NavLink>
                 </div>
             </div>
             </>

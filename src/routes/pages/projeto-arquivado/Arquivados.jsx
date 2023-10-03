@@ -13,51 +13,51 @@ const ProjetosArquivados = () => {
           <Barrafiltro />
         </div>
         
-        <div class='tres-divs'>
-          <div class='nav-arqv'> 
+        <div className='tres-divs'>
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P1</h>
               </button>
             </NavLink>
           </div>
 
-          <div class='nav-arqv'> 
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P2</h>
               </button>
             </NavLink>
           </div>
 
-          <div class='nav-arqv'> 
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P3</h>
               </button>
             </NavLink>
           </div>
         </div>
 
-          <div class='nav-arqv'> 
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P4</h>
               </button>
             </NavLink>
           </div>
 
-          <div class='nav-arqv'> 
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P5</h>
               </button>
             </NavLink>
           </div>
 
-          <div class='nav-arqv'> 
+          <div className='nav-arqv'> 
             <NavLink to='/vilarquivo'>
-              <button class='btn-arquivados'>
+              <button className='btn-arquivados'>
                 <h>P6</h>
               </button>
             </NavLink>
