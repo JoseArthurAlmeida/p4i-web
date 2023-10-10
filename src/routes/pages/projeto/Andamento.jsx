@@ -16,7 +16,7 @@ const Andamento = () => {
               </button>
             </NavLink>
                  
-            <NavLink to='/reunioesinseri'>
+            <NavLink to='/reunioes'>
               <button id='btn-rn'>
                 <ImBubbles2 /><br></br>
                 <span>Reunião</span>
