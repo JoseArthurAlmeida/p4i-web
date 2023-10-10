@@ -5,6 +5,7 @@ import "../../../css/atividade-reuex.css";
 import { useParams } from "react-router-dom";
 import conexaoApi from "../../../axios/config";
 import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import Loader from "../../../components/Loader";
 
 const { Content } = Layout;
 //`/posts/${id}`
@@ -58,7 +59,7 @@ const Reuniaoex = () => {
                 <NavLink to='/reunioes'><button className="btn-cadastrar">Fechar</button></NavLink>
             </Content>
 
-            ) : (<><h>carregando</h></>)}
+            ) : (<Loader/>)}
         </Layout>
     );
 };
