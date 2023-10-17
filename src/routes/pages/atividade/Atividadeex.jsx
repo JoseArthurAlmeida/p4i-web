@@ -1,49 +1,90 @@
-import {Layout} from 'antd';
-import { NavLink } from 'react-router-dom';
+import { useState, useEffect } from "react";
+import { Layout } from 'antd';
+import { useParams, useNavigate } from "react-router-dom";
 import '../../../css/atividade-reuex.css';
 import circulovermelho from '../../../images/circulovermelho.png';
+import conexaoApi from "../../../axios/config";
+import Loader from "../../../components/Loader";
+
 //import circuloamarelo from '../../../images/circuloamarelo.png';
 //import circuloverde from '../../../images/circuloverde.png';
 
-const {Content} = Layout;
-
+const { Content } = Layout;
 
 const Atividadeex = () => {
+    const navigate = useNavigate();
+    const { id } = useParams();
+    const [atividade, setAtividade] = useState([]);
+    const [link, setLink] = useState("")
+
+    const getAtividade = async () => {
+        try {
+            const response = await conexaoApi.get(`/artefatos/${id}`);
+            const data = response.data.data;
+            console.log(data)
+            setAtividade(data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+    function mudaEstado(event, setState) {
+        const novoValor = event.target.value;
+        setState(novoValor);
+        console.log(novoValor)
+    }
+
+    const putAtividade = async () => {
+        // entregar atividade
+        if(link === "") {
+            window.alert("nao pode ser vazio")
+        } else {
+            const atv = { link, status: "entregue"};
+            console.log(atv);
+    
+            await conexaoApi.put(`/artefatos/${id}`, { data: atv });
+            navigate("/atividades", { state: { message: "Atividade entregue" } })
+        }
+    }
+
+    useEffect(() => {
+        getAtividade();
+        // eslint-disable-next-line
+    }, []);
+
     return (
-    <Layout>
-        <Content>
-            <div id='titulo-status-ex'>
+        <Layout>
+            {atividade.attributes ? (
+                <Content>
+                    <div id='titulo-status-ex'>
+                        <h className='conteudo-head'>{atividade.attributes.nome}</h>
+                        <h className='conteudo-head'>Status: <img src={circulovermelho} alt='circulovermelho' /></h>
+                    </div>
+                    <div id='prazo-atv'>
+                        <h className='conteudo-prazo'>Prazo: {atividade.attributes.prazo}</h><br></br>
+                        {/*<h className='conteudo-prazo'>Disciplina: X</h>*/}
+                    </div>
 
-                <h className='conteudo-head'>"Título da atividade"</h>
+                    <div id='descricao'>
+                        <h className='text-descricao-link'>{atividade.attributes.descricao}</h>
+                    </div>
 
-                <h className='conteudo-head'>Status: <img src={circulovermelho}  alt='circulovermelho'/></h>
-               
-            </div>
-            <div id='prazo-atv'>  
-                <h className='conteudo-prazo'>Prazo: 00/00/0000</h><br></br>
-                <h className='conteudo-prazo'>Disciplina: X</h>
-            </div>
+                    <div id='add-link'>
+                        <h className='text-descricao-link'>Adicionar Link:</h>
+                        <input type='url' id='input-atv' value={link} onChange={(event) => mudaEstado(event, setLink)} required />
+                    </div>
 
-            <div id='descricao'>
-                <h className='text-descricao-link'>Descrição geral da atividade</h>
-            </div>
+                    <div id='button-position'>
 
-            <div id='add-link'>
-                <h className='text-descricao-link'>Adicionar Link:</h>
-                <input type='url' id='input-atv'/>
-            </div>
-            
-            <div id='button-position'>
-                <NavLink to='/atividades'>
-                    <button className="btn-cadastrar">Entregar</button>
-                </NavLink>    
-            </div>
-            
-            
+                        <button className="btn-cadastrar" onClick={() => putAtividade()}>Entregar</button>
 
-        </Content>
-    </Layout>    
+                    </div>
+                </Content>
+            ) : <Loader />}
+
+
+        </Layout>
     );
-  };
-  
-  export default Atividadeex;
+};
+
+export default Atividadeex;

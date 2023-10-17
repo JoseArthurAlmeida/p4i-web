@@ -26,7 +26,6 @@ const Reunioes = () => {
 
       setReunioes(data);
       setRemoverLoader(true)
-
     } catch (error) {
       console.log(error);
     }

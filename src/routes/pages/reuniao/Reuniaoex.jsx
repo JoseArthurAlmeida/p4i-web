@@ -30,36 +30,34 @@ const Reuniaoex = () => {
         // eslint-disable-next-line
     }, []);
     return (
-
         <Layout>
             {reuniao.attributes ? (
                 <Content>
-                <div id='titulo-status-ex'>
-                    <h className='conteudo-head'>{reuniao.attributes.titulo}</h>
-                    <h className='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
-                </div>
+                    <div id='titulo-status-ex'>
+                        <h className='conteudo-head'>{reuniao.attributes.titulo}</h>
+                        <h className='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
+                    </div>
 
-                <div id='participantes-reu'>
-                    <h className='conteudo-titulos-reu'>Participantes:</h>
-                    <ul id='ul-reu'>
-                        <li>Participante 1</li>
-                        <li>Participante 2</li>
-                        <li>Participante 3</li>
-                        <li>Participante 4</li>
-                        <li>Participante 5</li>
-                    </ul>
-                </div>
+                    <div id='participantes-reu'>
+                        <h className='conteudo-titulos-reu'>Participantes:</h>
+                        <ul id='ul-reu'>
+                            <li>Participante 1</li>
+                            <li>Participante 2</li>
+                            <li>Participante 3</li>
+                            <li>Participante 4</li>
+                            <li>Participante 5</li>
+                        </ul>
+                    </div>
 
-                <div id='objetivo-reu'>
-                    <h className='conteudo-titulos-reu'>{`Objetivo: ${reuniao.attributes.objetivo}`}</h>
-                </div>
-                <div id='ata-reu'>
-                    <h className='conteudo-titulos-reu'>{`Ata: ${reuniao.attributes.ata}`}</h>
-                </div>
-                <NavLink to='/reunioes'><button className="btn-cadastrar">Fechar</button></NavLink>
-            </Content>
-
-            ) : (<Loader/>)}
+                    <div id='objetivo-reu'>
+                        <h className='conteudo-titulos-reu'>{`Objetivo: ${reuniao.attributes.objetivo}`}</h>
+                    </div>
+                    <div id='ata-reu'>
+                        <h className='conteudo-titulos-reu'>{`Ata: ${reuniao.attributes.ata}`}</h>
+                    </div>
+                    <NavLink to='/reunioes'><button className="btn-cadastrar">Fechar</button></NavLink>
+                </Content>
+            ) : (<Loader />)}
         </Layout>
     );
 };
