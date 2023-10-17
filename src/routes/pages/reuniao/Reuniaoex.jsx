@@ -31,9 +31,9 @@ const Reuniaoex = () => {
         // eslint-disable-next-line
     }, []);
     return (
-
         <Layout>
             {reuniao.attributes ? (
+
                 <main className='main-transparent'>
                     <main className="main-white">
                 <div id='titulo-status-ex'>
@@ -41,16 +41,18 @@ const Reuniaoex = () => {
                     <h className='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
                 </div>
 
-                <div id='participantes-reu'>
-                    <h className='conteudo-titulos-reu'>Participantes:</h>
-                    <ul id='ul-reu'>
-                        <li>Participante 1</li>
-                        <li>Participante 2</li>
-                        <li>Participante 3</li>
-                        <li>Participante 4</li>
-                        <li>Participante 5</li>
-                    </ul>
-                </div>
+
+                    <div id='participantes-reu'>
+                        <h className='conteudo-titulos-reu'>Participantes:</h>
+                        <ul id='ul-reu'>
+                            <li>Participante 1</li>
+                            <li>Participante 2</li>
+                            <li>Participante 3</li>
+                            <li>Participante 4</li>
+                            <li>Participante 5</li>
+                        </ul>
+                    </div>
+
 
                 <div id='objetivo-reu'>
                     <h className='conteudo-titulos-reu'>{`Objetivo: ${reuniao.attributes.objetivo}`}</h>
@@ -63,6 +65,7 @@ const Reuniaoex = () => {
             </main>
 
             ) : (<Loader/>)}
+
         </Layout>
     );
 };

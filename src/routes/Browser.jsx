@@ -25,7 +25,7 @@ const Browser = () => {
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
         { path: "/atividades", element: <Atividades/> },
         { path: "/cadastroreunioes", element: <Cadastroreuniao/> },
-        { path: "/atividadeex", element: <Atividadeex/> },
+        { path: "/atividades/:id", element: <Atividadeex/> },
         { path: "/reunioes", element: <Reunioes/> },
         { path: "/reunioes/:id", element: <Reuniaoex/> },
         { path: "/vilarquivo", element: <Vilarquivo/> },
