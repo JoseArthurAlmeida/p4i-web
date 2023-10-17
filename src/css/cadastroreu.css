@@ -1,4 +1,4 @@
-#form{
+#form {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -7,7 +7,7 @@
     line-height: 60px;
 }
 
-.inputcadastro{
+.inputcadastro {
     margin: 15px 20px;
     border-radius: 5px;
     background-color: #E4E4E4;
@@ -16,14 +16,14 @@
     width: 300px;
 }
 
-.conteudo-form{
+.conteudo-form {
     display: flex;
-  justify-content: space-between;
-  margin-right: 10px;
+    justify-content: space-between;
+    margin-right: 10px;
 
 }
 
-.titulos{
+.titulos {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Arial';
@@ -31,11 +31,11 @@
     padding: 0px;
 }
 
-.btn-cadastrar-reu{
-    position: center;
+.btn-cadastrar-reu {
+    position: relative;
     color: #FFF;
-    bottom: 30px;
-    right: 30px;
+    bottom: 0vh;
+    right: 0vh;
     background-color: #BE0D00;
     border: none;
     padding: 10px 40px;
@@ -44,10 +44,15 @@
     cursor: pointer;
 }
 
-#button-position{
-    position: absolute;
-    margin: 0px 30px;
-    bottom: 0;
-    right: 0;
+#button-position-form {
+    position: relative;
+    margin: -13px 150px;
+    bottom: -2vh;
+    right: -23vh;
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 140px;
 }

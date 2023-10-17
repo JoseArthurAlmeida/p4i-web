@@ -6,7 +6,6 @@ import Projeto from "./pages/projeto/Projeto"
 import ProjetosArquivados from "./pages/projeto-arquivado/Arquivados"
 import Andamento from "./pages/projeto/Andamento";
 import Atividades from "./pages/atividade/Atividades";
-import Reunioesinseri from "./pages/reuniao/Reunioesinseri";
 import Cadastroreuniao from "./pages/reuniao/Cadastroreuniao";
 import Atividadeex from "./pages/atividade/Atividadeex";
 import Reunioes from "./pages/reuniao/Reunioes";
@@ -25,7 +24,6 @@ const Browser = () => {
         { path: "/andamento", element: <Andamento/> },
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
         { path: "/atividades", element: <Atividades/> },
-        { path: "/reunioesinseri", element: <Reunioesinseri/> },
         { path: "/cadastroreunioes", element: <Cadastroreuniao/> },
         { path: "/atividadeex", element: <Atividadeex/> },
         { path: "/reunioes", element: <Reunioes/> },

@@ -2,11 +2,13 @@ import { useState, useEffect } from "react";
 import { Layout } from 'antd';
 import { NavLink } from 'react-router-dom';
 import "../../../css/atividade-reuex.css";
+import "../../../css/home.css";
 import { useParams } from "react-router-dom";
 import conexaoApi from "../../../axios/config";
 import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import Loader from "../../../components/Loader";
 
-const { Content } = Layout;
+//const { Content } = Layout;
 //`/posts/${id}`
 const Reuniaoex = () => {
     const { id } = useParams();
@@ -32,7 +34,8 @@ const Reuniaoex = () => {
 
         <Layout>
             {reuniao.attributes ? (
-                <Content>
+                <main className='main-transparent'>
+                    <main className="main-white">
                 <div id='titulo-status-ex'>
                     <h className='conteudo-head'>{reuniao.attributes.titulo}</h>
                     <h className='conteudo-head'>{`Realizada: ${formataData(reuniao.attributes.data_realizacao)}`}</h>
@@ -56,9 +59,10 @@ const Reuniaoex = () => {
                     <h className='conteudo-titulos-reu'>{`Ata: ${reuniao.attributes.ata}`}</h>
                 </div>
                 <NavLink to='/reunioes'><button className="btn-cadastrar">Fechar</button></NavLink>
-            </Content>
+                </main>
+            </main>
 
-            ) : (<><h>carregando</h></>)}
+            ) : (<Loader/>)}
         </Layout>
     );
 };

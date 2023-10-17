@@ -4,7 +4,7 @@ import Reunioes from './Reunioes';
 import {RiAddCircleFill} from 'react-icons/ri';
 import "../../../css/reunioesinseri.css";
 import { NavLink } from 'react-router-dom';
-const {Content} = Layout;
+//const {Content} = Layout;
 
 const Reunioesinseri = () => {
     const [temReunioes] = useState(true);

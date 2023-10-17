@@ -12,8 +12,6 @@
     height: 230px;
     overflow: hidden;
     position: relative;
-    top: 230px;
-    left: 150px;
     border: none;
 
 }
@@ -32,25 +30,30 @@
     height: 230px;
     overflow: hidden;
     position: relative;
-    top: 230px;
-    left: 400px;
     border: none;
 }
 
-.btn-ent {
-    border-radius: 20px;
-    background: #FFF;
-    box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
-    cursor: pointer;
-    display: inline-block;
-    padding: .75rem 1.25rem;
-    color: #000000;
-    font-size: 1rem;
-    letter-spacing: .15rem;
-    width: 350px;
-    height: 230px;
-    overflow: hidden;
+#space-btns {
     position: relative;
-    top: 230px;
-    left: 400px;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 52rem;
+    height: 20rem;
+    bottom: -30vh;
+    right: -25vh;
+    background-color: transparent;
+}
+
+.btns-andamento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.titulos-btn-andamento{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Arial';
+}

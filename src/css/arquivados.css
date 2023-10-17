@@ -13,6 +13,9 @@
     margin: 15px 40px;
 }
 
-.tres-divs{
-    display: inline-block;
+.conteudo-arquivados{
+    margin: 20px 65px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 50%;
 }
