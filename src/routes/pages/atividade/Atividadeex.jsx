@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Layout } from 'antd';
 import { useParams, useNavigate } from "react-router-dom";
 import '../../../css/atividade-reuex.css';
 import circulovermelho from '../../../images/circulovermelho.png';
@@ -9,7 +8,6 @@ import Loader from "../../../components/Loader";
 //import circuloamarelo from '../../../images/circuloamarelo.png';
 //import circuloverde from '../../../images/circuloverde.png';
 
-const { Content } = Layout;
 
 const Atividadeex = () => {
     const navigate = useNavigate();
@@ -53,9 +51,9 @@ const Atividadeex = () => {
     }, []);
 
     return (
-        <Layout>
+        <main className="main-transparent">
             {atividade.attributes ? (
-                <Content>
+                <main className="main-white">
                     <div id='titulo-status-ex'>
                         <h className='conteudo-head'>{atividade.attributes.nome}</h>
                         <h className='conteudo-head'>Status: <img src={circulovermelho} alt='circulovermelho' /></h>
@@ -79,11 +77,11 @@ const Atividadeex = () => {
                         <button className="btn-cadastrar" onClick={() => putAtividade()}>Entregar</button>
 
                     </div>
-                </Content>
+                </main>
             ) : <Loader />}
 
 
-        </Layout>
+        </main>
     );
 };
 
