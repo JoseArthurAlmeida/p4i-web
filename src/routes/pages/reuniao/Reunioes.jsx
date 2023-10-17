@@ -4,6 +4,7 @@ import '../../../css/atividades-reu.css';
 import botaomais from '../../../images/botaomais.png';
 import conexaoApi from "../../../axios/config";
 import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import { BsBoxArrowInRight } from "react-icons/bs";
 import { BiTrash } from "react-icons/bi";
 
 const Reunioes = () => {
@@ -37,41 +38,45 @@ const Reunioes = () => {
 
 
   return (
+    <>
 
     <div className='conteudo'>
       {
         reunioes.map((reuniao) => (
           <div className='nav' key={reuniao.id}>
 
-            <button className='btn-atv-reu'>
-
+            <div className='btn-atv-reu'>
+              <div id="btn-head">
               <div id='titulo-status'>
                 <h className='text-titulo'>{reuniao.attributes.titulo}</h>
               </div>
 
 
-              <div>
-                  <div >
+              
+              <div className='btns-junt' style={{display:"flex", gap:"10px", justifyContent:"flex-end"}}>
+                <div id="btn-visu">
                     <NavLink to={`/reunioes/${reuniao.id}`}>
-                      <button>Acessar</button>
+                      <button className="btns-int-reu"><BsBoxArrowInRight style={{ fontSize: '20px' }} /></button>
                     </NavLink>
-                    <button onClick={() => apagarReuniao(reuniao.id)}><BiTrash size={30} /></button>
-                  </div>
                 </div>
 
+                    <button className="btns-int-reu" onClick={() => apagarReuniao(reuniao.id)}><BiTrash style={{ fontSize: '20px' }} /></button>
+                  </div>
+              </div>
 
 
               <div id='conteudo-btn-reu'>
                 <h className='text-data'>Realizada: {formataData(reuniao.attributes.data_realizacao)}</h>
               </div>
-            </button>
+            </div>
 
           </div>
         ))
       }
+      </div>
       <NavLink to='/cadastroreunioes'><button id="botao-mais"><img src={botaomais} alt='botaomais' /></button></NavLink>
 
-    </div>
+      </>
 
 
 

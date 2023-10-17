@@ -1,17 +1,19 @@
 /* Configurações do menu*/
-#menu{
+#menu {
   background: #085c16;
   height: 100vh;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.88);
 }
 
-:where(.css-dev-only-do-not-override-1wazalj)[class^="ant-layout"], :where(.css-dev-only-do-not-override-1wazalj)[class*=" ant-layout"] {
-  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+:where(.css-dev-only-do-not-override-1wazalj)[class^="ant-layout"],
+:where(.css-dev-only-do-not-override-1wazalj)[class*=" ant-layout"] {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   font-size: 15px;
   box-sizing: border-box;
 }
 
-:where(.css-dev-only-do-not-override-1wazalj).ant-menu-light .ant-menu-item-selected, :where(.css-dev-only-do-not-override-1wazalj).ant-menu-light>.ant-menu .ant-menu-item-selected {
+:where(.css-dev-only-do-not-override-1wazalj).ant-menu-light .ant-menu-item-selected,
+:where(.css-dev-only-do-not-override-1wazalj).ant-menu-light>.ant-menu .ant-menu-item-selected {
   background-color: #ffffff;
   color: #000000;
 }
@@ -33,34 +35,43 @@
   background-color: #00000000;
   color: #ffffff;
 }
+
 /*///////////////////////////////////////////////*/
 
 /* Configurações da tag main prensente na maioria das telas (caixa branca de fundo) */
-main {     
-  margin: 24px 16px;
-  padding: 240;
-  min-height: 510;
-  top: 20 px;
-  right: 20 px;
+main {
+  margin: 20px;
   padding: 0px;
+  overflow: initial;
   line-height: 5vh;
   border-radius: 20px;
   background: #FFF;
   box-shadow: 5px 4px 10px 0px rgba(0, 0, 0, 0.58);
 }
+
+:where(.css-dev-only-do-not-override-1wazalj).ant-layout{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background: #f5f5f5;
+}
+
 /*///////////////////////////////////////////////*/
 
 .btn-acessar {
-    position: center;
-    color: #FFF;
-    bottom: 30px;
-    right: 30px;
-    background-color: #BE0D00;
-    border: none;
-    padding: 10px 40px;
-    border-radius: 90px;
-    font-size: 14px;
-    cursor: pointer;
+  position: center;
+  color: #FFF;
+  bottom: 30px;
+  right: 30px;
+  background-color: #BE0D00;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 90px;
+  font-size: 14px;
+  cursor: pointer;
 
 }
 
@@ -81,20 +92,20 @@ main {
 
 /* Tela de "Projeto", tambem serve para a tela de vilarquivo*/
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   margin: 24px 16px;
 }
 
-#header{
+#header {
   margin: 20px 30px;
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
 }
 
-h1{
+h1 {
   font-size: 35px;
   font-weight: bold;
   font-family: 'Arial';
@@ -103,17 +114,17 @@ h1{
   padding: 0px;
 }
 
-#titulo-vilarquivo{
+#titulo-vilarquivo {
   margin: 20px 30px;
   width: 40px;
   height: 30px;
 }
 
-.conteudo-de-titulos{
+.conteudo-de-titulos {
   margin: 0px 10px;
 }
 
-.titulos-pj{
+.titulos-pj {
   font-size: 24px;
   font-weight: bold;
   font-family: 'Arial';
@@ -121,19 +132,19 @@ h1{
   padding: 0px;
 }
 
-#ul-pj{
+#ul-pj {
   margin: 0px 0px;
 }
 
-li{
+li {
   margin: -5px -15px;
 }
 
-.conteudos{
+.conteudos {
   margin: 3rem 0;
 }
 
-#conteudos-pj{
+#conteudos-pj {
   margin: 10px 90px;
   display: flex;
   justify-content: space-between;
@@ -154,13 +165,14 @@ li{
   cursor: pointer;
 }
 
-#position-btnred{
+#position-btnred {
   position: absolute;
-    margin: 0px 30px;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+  margin: 0px 30px;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
 }
+
 /*///////////////////////////////////////////////*/
 
 /*Tela atividades*/
@@ -172,7 +184,7 @@ li{
 
 
 
-#inseri-pj{
+#inseri-pj {
   position: fixed;
   top: 0;
   left: 0;

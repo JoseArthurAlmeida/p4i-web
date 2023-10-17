@@ -12,13 +12,21 @@ const App = () => {
 
   return (
     <Layout>
-      <Sider collapsible >
+      <Sider style={{
+          overflow: 'auto',
+          height: '100vh',
+          position: 'fixed',
+          left: 0,
+          top: 0,
+          bottom: 0,
+          zIndex: 1000,
+        }} collapsible >
         <div className="demo-logo-vertical" />
         <Menu
           theme="light"
           mode="inline"
           defaultSelectedKeys={['1']}
-          style={{ background: '#085C16', height: '100vh' }}
+          style={{ background: '#085C16', height: '100%' }}
         >
           
           <Menu.Item key="1" icon={<HomeOutlined />} className="custom-menu-item">

@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../../css/home.css';
 import '../../../css/atividades-reu.css';
 import conexaoApi from "../../../axios/config";
+import { Layout } from "antd";
 
 
 const Atividades = () => {
@@ -26,7 +27,7 @@ const Atividades = () => {
   }, []);
 
   return (
-    <>
+    <Layout>
       <div className='conteudo'>
         {
           atividades.map((atividade) => (
@@ -51,7 +52,7 @@ const Atividades = () => {
 
 
       </div>
-    </>
+    </Layout>
   );
 };
 
