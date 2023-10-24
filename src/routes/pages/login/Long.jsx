@@ -54,7 +54,7 @@ const Login = () => {
             style={{ marginBottom: "16px", borderRadius: "50px" }}
           />
         </div>
-        <NavLink to="/inseri">
+        <NavLink to="/projeto">
           <button className="btn-acessar">Acessar</button>
         </NavLink>
       </div>
