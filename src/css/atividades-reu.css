@@ -9,10 +9,11 @@
 }
 
 .conteudo {
+    FONT-VARIANT: JIS83;
     margin: 20px 60px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 100%;
+    grid-template-columns: repeat(4, 24rem);
+    grid-auto-rows: 50%;
 }
 
 

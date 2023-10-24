@@ -1,13 +1,12 @@
-#conteudo-geral{
+#conteudo-geral {
     position: relative;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.clique{
+.clique {
     margin: 30px 0px;
     padding: 0px;
     width: 660px;
@@ -15,19 +14,19 @@
     display: flex;
     position: relative;
     flex-direction: column;
-     /* Centraliza verticalmente */
+    /* Centraliza verticalmente */
 
-   
+
 }
 
-#clique2{
+#clique2 {
     margin: 0px 140px;
     margin-bottom: 20px;
-    margin-top: 70px;
+    margin-top: 7rem;
     position: absolute;
 }
 
-#titulo-reu{
+#titulo-reu {
     color: #000;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     font-family: Arial;
@@ -37,7 +36,7 @@
     line-height: normal;
 }
 
-#titulo-inseri{
+#titulo-inseri {
     color: #000;
     text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
     font-family: Arial;
@@ -47,14 +46,14 @@
     line-height: normal;
 }
 
-#titulo-clique2{
-    color: #000;    
+#titulo-clique2 {
+    color: #000;
     font-family: Arial;
-    font-size: 15px;    
-    font-weight: 700;    
+    font-size: 15px;
+    font-weight: 700;
 }
 
-#barra-verde{
+#barra-verde {
     right: 5px;
     width: 220px;
     margin: -20px 0px;

@@ -35,24 +35,21 @@
 
 #space-btns {
     position: relative;
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 52rem;
-    height: 20rem;
-    bottom: -30vh;
-    right: -25vh;
+    justify-content: space-evenly;
     background-color: transparent;
 }
 
-.btns-andamento{
+.btns-andamento {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
 }
 
-.titulos-btn-andamento{
+.titulos-btn-andamento {
     font-size: 20px;
     font-weight: bold;
     font-family: 'Arial';
