@@ -56,8 +56,8 @@ const Reunioes = () => {
           <div className='nav' key={reuniao.id}>
 
             <div className='btn-atv-reu'>
-              <div id="head-btn">
-              <div id='titulo-e-btns'>
+              <div className="head-btn">
+              <div className='titulo-e-btns'>
                 <h className='text-titulo'>{reuniao.attributes.titulo}</h>
               </div>
               <div id="btn-acss-delet">

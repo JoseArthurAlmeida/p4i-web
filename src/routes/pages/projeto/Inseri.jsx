@@ -23,8 +23,6 @@ const Inseri = () => {
       )}
     </>
   );
-};
-
-
+}
 
 export default Inseri;

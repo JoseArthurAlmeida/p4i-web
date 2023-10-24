@@ -35,14 +35,12 @@
 
 #conteudo-btn-atv {
     position: absolute;
-    margin: 30px 12px;
-    margin-top: 20px;
-    width: 120px;
-    height: 50px;
+    margin-left: 30px;
+    margin-top: 50px;
+    width: 121px;
+    height: 19px;
 }
 
-/* // margin: 30px 12px;
-margin-top: 35px; */
 #conteudo-btn-reu {
     position: absolute;
     margin: 30px 25px;
@@ -95,7 +93,7 @@ margin-top: 35px; */
     right: 30px;
 }
 
-#head-btn {
+.head-btn {
     margin: 20px 30px;
     display: flex;
     justify-content: space-between;
@@ -118,6 +116,29 @@ margin-top: 35px; */
     align-items: center;
     justify-content: center;
     align-items: center;
+}
+
+#btn-atv {
+    border-radius: 50%;
+    border: none;
+    background-color: transparent;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-atv-position {
+    margin-top: 4rem;
+    margin-left: 18rem;
+}
+
+.text-btn{
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Arial';
 }
 
 button {

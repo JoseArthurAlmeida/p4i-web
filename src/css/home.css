@@ -112,10 +112,10 @@
 }
 
 #header {
-  margin: 20px 30px;
+  margin: 20px 45px;
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
+  padding-top: 30px;
 }
 
 h1 {

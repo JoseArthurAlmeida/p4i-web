@@ -1,9 +1,9 @@
 #titulo-status-ex {
     position: relative;
-    margin: 20px 30px;
+    margin: 0px 30px;
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 2rem;
 }
 
 .conteudo-head {
@@ -12,9 +12,9 @@
 }
 
 #prazo-atv {
-    position: absolute;
-    margin: 0px 40px;
-    margin-top: 0px;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 1rem;
 }
 
 .conteudo-prazo {
@@ -23,10 +23,11 @@
 }
 
 #descricao {
-    position: absolute;
-    margin: 0px 40px;
-    margin-top: 10px;
-    position: absolute;
+    width: 30rem;
+    height: auto;
+    position: relative;
+    margin-left: -10rem;
+    margin-top: 1rem;
     left: 50%;
     transform: translate(-15%, 0%);
 }
@@ -37,9 +38,9 @@
 }
 
 #add-link {
-    position: absolute;
-    margin: 0px 40px;
-    margin-top: 300px;
+    position: relative;
+    margin-left: 2rem;
+    margin-top: 10rem;
 }
 
 #input-atv {
@@ -96,9 +97,7 @@
 }
 
 #button-position {
-    position: absolute;
-    margin: 0px 30px;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
+    position: relative;
+    margin-top: 5rem;
+    margin-left: 7rem;
 }

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { NavLink } from 'react-router-dom';
+import { BsBoxArrowInRight } from "react-icons/bs";
 import '../../../css/home.css';
 import '../../../css/atividades-reu.css';
 import conexaoApi from "../../../axios/config";
 import Loader from "../../../components/Loader";
-
+import formataData from "../../../components/funcoes_compartilhadas/formatarData";
 
 
 const Atividades = () => {
@@ -33,27 +34,28 @@ const Atividades = () => {
       <div className='conteudo'>
         {atividades.length > 0 && atividades.map((atividade) => (
           <div className='nav' key={atividade.id}>
-            <button className='btn-atv-reu'>
+            <div className='btn-atv-reu'>
 
-              <div id='titulo-status'>
-                <h className='text-btn'>{atividade.attributes.nome}</h>
+
+              <div className="head-btn">            
+                <h className='text-titulo'>{atividade.attributes.nome}</h>               
                 <h className='text-btn'>{atividade.attributes.status}</h>
               </div>
               <div id='conteudo-btn-atv'>
-                <h className='text-btn'>{atividade.attributes.prazo}</h><br />
+                <h className='text-btn'>Prazo: {formataData(atividade.attributes.prazo)}</h><br />
                 {/*<h id='disciplina-pd' className='text-btn'>Disciplina: X</h>*/}
               </div>
-              <div>
+              <div id="btn-atv-position">
                 <NavLink to={`/atividades/${atividade.id}`}>
-                  <button>acessar</button>
+                  <button id="btn-atv"><BsBoxArrowInRight size={30} /></button>
                 </NavLink>
               </div>
-            </button>
+            </div>
 
           </div>
         ))
         }
-         {!removerLoader && <Loader />}
+        {!removerLoader && <Loader />}
         {removerLoader && atividades.length === 0 && (
           <>nao tem atividade</>
         )}

@@ -4,6 +4,7 @@ import '../../../css/atividade-reuex.css';
 import circulovermelho from '../../../images/circulovermelho.png';
 import conexaoApi from "../../../axios/config";
 import Loader from "../../../components/Loader";
+import formataData from "../../../components/funcoes_compartilhadas/formatarData";
 
 //import circuloamarelo from '../../../images/circuloamarelo.png';
 //import circuloverde from '../../../images/circuloverde.png';
@@ -59,7 +60,7 @@ const Atividadeex = () => {
                         <h className='conteudo-head'>Status: <img src={circulovermelho} alt='circulovermelho' /></h>
                     </div>
                     <div id='prazo-atv'>
-                        <h className='conteudo-prazo'>Prazo: {atividade.attributes.prazo}</h><br></br>
+                        <h className='conteudo-prazo'>Prazo: {formataData(atividade.attributes.prazo)}</h><br></br>
                         {/*<h className='conteudo-prazo'>Disciplina: X</h>*/}
                     </div>
 
