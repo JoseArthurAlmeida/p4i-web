@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import App from "../App"
 import Login from "./pages/login/Long"
-import Inseri from "./pages/projeto/Inseri" 
 import Projeto from "./pages/projeto/Projeto"
 import ProjetosArquivados from "./pages/projeto-arquivado/Arquivados"
 import Andamento from "./pages/projeto/Andamento";
@@ -19,7 +18,6 @@ const Browser = () => {
     
     { path: "/", element: <App />,
       children: [
-        { path: "/inseri", element: <Inseri/>},
         { path: "/projeto", element: <Projeto/>},
         { path: "/andamento", element: <Andamento/> },
         { path: "/projetosarquivados", element: <ProjetosArquivados/> },
