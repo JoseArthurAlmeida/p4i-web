@@ -8,7 +8,6 @@ import { Button } from 'antd';
 import { WhatsAppOutlined, GitlabFilled, } from '@ant-design/icons';
 import { FaGoogleDrive } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-import "../../../css/home.css"
 import Grafico from '../../../components/Grafico';
 
 
@@ -32,7 +31,8 @@ const Inseri = () => {
       setRemoverLoader(true)
     }
   };
-  useEffect(() => { getProjeto() 
+  useEffect(() => {
+    getProjeto()
     // eslint-disable-next-line 
   }, []);
 
@@ -86,20 +86,24 @@ const Inseri = () => {
             </div>
 
           </div>
-          <div id='position-bntred'><NavLink to="/andamento"><button className="btn-red">Andamento</button></NavLink></div>
+          <div id='position-btnred'>
+            <NavLink to="/andamento">
+              <button className="btn-red">Andamento</button>
+            </NavLink>
+          </div>
         </main>
 
       )}
 
-{!removerLoader && <Loader />}
-        {removerLoader && prj.length === 0 && (
-           <div id='conteudo-geral'>
-           <div className="clique">
-             <h id='titulo-inseri'>No momento você não está inserido em um projeto.</h><br></br>
-             <hr id='barra-verde' />
-           </div>
-         </div>
-        )}
+      {!removerLoader && <Loader />}
+      {removerLoader && prj.length === 0 && (
+        <div id='conteudo-geral'>
+          <div className="clique">
+            <h id='titulo-inseri'>No momento você não está inserido em um projeto.</h><br></br>
+            <hr id='barra-verde' />
+          </div>
+        </div>
+      )}
 
 
 

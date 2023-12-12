@@ -13,20 +13,21 @@ import Vilarquivo from "./pages/projeto-arquivado/Vilarquivo"
 
 const Browser = () => {
   const router = createBrowserRouter([
-    
-    { path: "", element: <Login/>},
-    
-    { path: "/", element: <App />,
+
+    { path: "", element: <Login /> },
+
+    {
+      path: "/", element: <App />,
       children: [
-        { path: "/projeto", element: <Projeto/>},
-        { path: "/andamento", element: <Andamento/> },
-        { path: "/projetosarquivados", element: <ProjetosArquivados/> },
-        { path: "/atividades", element: <Atividades/> },
-        { path: "/cadastroreunioes", element: <Cadastroreuniao/> },
-        { path: "/atividades/:id", element: <Atividadeex/> },
-        { path: "/reunioes", element: <Reunioes/> },
-        { path: "/reunioes/:id", element: <Reuniaoex/> },
-        { path: "/vilarquivo", element: <Vilarquivo/> },
+        { path: "/projeto", element: <Projeto /> },
+        { path: "/andamento", element: <Andamento /> },
+        { path: "/projetosarquivados", element: <ProjetosArquivados /> },
+        { path: "/atividades", element: <Atividades /> },
+        { path: "/cadastroreunioes", element: <Cadastroreuniao /> },
+        { path: "/atividades/:id", element: <Atividadeex /> },
+        { path: "/reunioes", element: <Reunioes /> },
+        { path: "/reunioes/:id", element: <Reuniaoex /> },
+        { path: "/vilarquivo", element: <Vilarquivo /> },
       ]
     }]);
   return (

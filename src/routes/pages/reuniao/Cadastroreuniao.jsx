@@ -45,7 +45,7 @@ const Cadastroreuniao = () => {
           <textarea className='inputcadastro' value={objetivo} onChange={(event) => mudaEstado(event, setObjetivo)} id="objetivo" name="objetivo" placeholder='Descreva o objetivo da reunião realizada' style={{ width: '300px', height: '30px', font: 'Arial' }} required></textarea></div>
 
         <div className='conteudo-form'><h className='titulos'>Ata:</h>
-          <input className='inputcadastro' value={ata} onChange={(event) => mudaEstado(event, setAta)} id='ata' required /></div>
+          <textarea className='inputcadastro' value={ata} onChange={(event) => mudaEstado(event, setAta)} id='ata' required></textarea></div>
         <div id='button-position-form'><button className="btn-cadastrar-reu">Cadastrar</button></div>
       </form>
 

@@ -37,8 +37,8 @@ const Atividades = () => {
             <div className='btn-atv-reu'>
 
 
-              <div className="head-btn">            
-                <h className='text-titulo'>{atividade.attributes.nome}</h>               
+              <div className="head-btn">
+                <h className='text-titulo'>{atividade.attributes.nome}</h>
                 <h className='text-btn'>{atividade.attributes.status}</h>
               </div>
               <div id='conteudo-btn-atv'>

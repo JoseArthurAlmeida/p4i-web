@@ -35,12 +35,12 @@ const Atividadeex = () => {
 
     const putAtividade = async () => {
         // entregar atividade
-        if(link === "") {
+        if (link === "") {
             window.alert("nao pode ser vazio")
         } else {
-            const atv = { link, status: "entregue"};
+            const atv = { link, status: "entregue" };
             console.log(atv);
-    
+
             await conexaoApi.put(`/artefatos/${id}`, { data: atv });
             navigate("/atividades", { state: { message: "Atividade entregue" } })
         }
@@ -73,9 +73,9 @@ const Atividadeex = () => {
                         <input type='url' id='input-atv' value={link} onChange={(event) => mudaEstado(event, setLink)} required />
                     </div>
 
-                    <div id='button-position'>
+                    <div id='position-btnred'>
 
-                        <button className="btn-cadastrar" onClick={() => putAtividade()}>Entregar</button>
+                        <button className="btn-red" onClick={() => putAtividade()}>Entregar</button>
 
                     </div>
                 </main>

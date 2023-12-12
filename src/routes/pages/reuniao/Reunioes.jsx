@@ -57,18 +57,18 @@ const Reunioes = () => {
 
             <div className='btn-atv-reu'>
               <div className="head-btn">
-              <div className='titulo-e-btns'>
-                <h className='text-titulo'>{reuniao.attributes.titulo}</h>
-              </div>
-              <div id="btn-acss-delet">
-                <div >
-                  <NavLink to={`/reunioes/${reuniao.id}`}>
-                    <button className="btns-reu"><BsBoxArrowInRight size={30} /></button>
-                  </NavLink>
+                <div className='titulo-e-btns'>
+                  <h className='text-titulo'>{reuniao.attributes.titulo}</h>
                 </div>
-                <button className="btns-reu" onClick={() => apagarReuniao(reuniao.id)}><BiTrash size={30} /></button>
+                <div id="btn-acss-delet">
+                  <div >
+                    <NavLink to={`/reunioes/${reuniao.id}`}>
+                      <button className="btns-reu"><BsBoxArrowInRight size={30} /></button>
+                    </NavLink>
+                  </div>
+                  <button className="btns-reu" onClick={() => apagarReuniao(reuniao.id)}><BiTrash size={30} /></button>
 
-              </div>
+                </div>
               </div>
 
               <div id='conteudo-btn-reu'>

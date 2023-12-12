@@ -13,7 +13,7 @@ const Andamento = () => {
         <div className='btns-andamento'>
           <NavLink to='/atividades'>
             <button id='btn-at'>
-              <LuClipboardSignature size={50}/><br></br>
+              <LuClipboardSignature size={50} /><br></br>
               <h className='titulos-btn-andamento'>Atividades</h>
             </button>
           </NavLink>
@@ -23,7 +23,7 @@ const Andamento = () => {
         <div className='btns-andamento'>
           <NavLink to='/reunioes'>
             <button id='btn-rn'>
-              <ImBubbles2 size={50}/><br></br>
+              <ImBubbles2 size={50} /><br></br>
               <h className='titulos-btn-andamento'>Reunião</h>
             </button>
           </NavLink>
