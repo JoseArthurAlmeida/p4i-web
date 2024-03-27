@@ -1,6 +1,6 @@
 import React from 'react';
 import { Slider } from 'antd';
-import './barra.css';
+import './css/barra.css';
 const Barrafiltro = () => (
   <Slider
     range={{

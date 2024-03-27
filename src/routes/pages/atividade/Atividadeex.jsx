@@ -4,7 +4,7 @@ import '../../../css/atividade-reuex.css';
 import circulovermelho from '../../../images/circulovermelho.png';
 import conexaoApi from "../../../axios/config";
 import Loader from "../../../components/Loader";
-import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import formataData from "../../../funcoes_compartilhadas/formatarData";
 
 //import circuloamarelo from '../../../images/circuloamarelo.png';
 //import circuloverde from '../../../images/circuloverde.png';

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../../../css/atividades-reu.css';
 import botaomais from '../../../images/botaomais.png';
 import conexaoApi from "../../../axios/config";
-import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import formataData from "../../../funcoes_compartilhadas/formatarData";
 import { BsBoxArrowInRight } from "react-icons/bs";
 import { BiTrash } from "react-icons/bi";
 import Loader from "../../../components/Loader";

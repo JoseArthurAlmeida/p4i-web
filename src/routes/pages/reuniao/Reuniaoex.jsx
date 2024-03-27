@@ -5,7 +5,7 @@ import "../../../css/atividade-reuex.css";
 import "../../../css/home.css";
 import { useParams } from "react-router-dom";
 import conexaoApi from "../../../axios/config";
-import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import formataData from "../../../funcoes_compartilhadas/formatarData";
 import Loader from "../../../components/Loader";
 
 //const { Content } = Layout;

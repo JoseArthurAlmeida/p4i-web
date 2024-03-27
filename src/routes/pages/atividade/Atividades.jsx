@@ -5,7 +5,7 @@ import '../../../css/home.css';
 import '../../../css/atividades-reu.css';
 import conexaoApi from "../../../axios/config";
 import Loader from "../../../components/Loader";
-import formataData from "../../../components/funcoes_compartilhadas/formatarData";
+import formataData from "../../../funcoes_compartilhadas/formatarData";
 
 
 const Atividades = () => {
